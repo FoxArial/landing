@@ -1,0 +1,16 @@
+$grayColor: #191919;
+$gray2Color: #5B5F61;
+$brownColor: #C4762B;
+$whiteCOlor: #FFFFFF;
+$bgPhoto: #242424;
+$backgroundColorPrymary: #EDEDED;
+$backgroundColorSecondary: #2C2B25;
+
+header{
+    background: red;
+}
+.nav {
+    a{
+        color: blue($color: #000000)
+    }
+}
