@@ -1,8 +1,67 @@
-header {
-  background: red;
+@import url("../fonts/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir LT Std", serif;
 }
 
-.nav a {
-  color: 0;
+header {
+  height: 100vh;
+  background-image: url("../tower1.png");
+  background-size: cover;
+  padding: 1px;
 }
-/*# sourceMappingURL=style-home.css.map */
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 90%;
+  padding-left: 20px;
+}
+nav img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
+}
+
+.nav-element {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: auto;
+}
+.nav-element ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-element ul img {
+  height: 1.5rem;
+  color: #ffffff;
+  padding: 0 1.3rem;
+}
+.nav-element ul img:hover::after {
+  content: "";
+}
+.nav-element ul li {
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style-type: none;
+  align-self: center;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 0.15rem solid transparent;
+}
+.nav-element ul li:nth-child(-n+3):hover {
+  border-bottom: 0.15rem solid #ffffff;
+}
+.nav-element ul li:active::before {
+  content: "";
+  box-shadow: inset 0 -0.3rem #ffffff;
+}/*# sourceMappingURL=style-home.css.map */
