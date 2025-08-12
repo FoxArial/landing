@@ -8,19 +8,18 @@
 }
 header {
   height: 100vh;
-  background-image: url("../tower1.png");  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../tower1.png");  
   background-size: cover;
-  padding: 1px;
-  position: relative;;
-  &::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
+  background-position: 0 -12px;
+  display: flex;
+  flex-direction: column;
+}
+.top-part{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+ 
 }
 nav {
   display: flex;
@@ -29,7 +28,6 @@ nav {
   #logo {
     height: fit-content;
     width: auto;
-    z-index: 1;
   }
   width: 85%;
   margin: 20px auto 0px auto;
@@ -196,4 +194,46 @@ nav {
       }
     
     }
-  
+.center-info{
+  color: $whiteCOlor;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  line-height: 5rem;
+  h1{
+    font-size: 2.8rem;
+    font-weight: 400;
+    
+  }
+  p{
+    font-size: 3rem;
+    font-weight: 750;
+  }
+}
+
+.bottom-part{
+  background-color: $whiteColorSecondScreen;
+  height: 10%;
+  img{
+    height: 75%;
+    width: auto;
+    margin: 2px auto 0 auto;
+    display: block;
+    animation: arrow 1.5s ease-in-out infinite;
+  }
+  @keyframes arrow {
+    0%{
+      transform: translate(0px,0px) ;
+    }
+    50%{
+      transform: translate(0px,10px) ;
+    }
+    100%{
+      transform: translate(0px,0px) ;
+    }
+  }
+}
