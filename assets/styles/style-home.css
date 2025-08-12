@@ -7,6 +7,10 @@
   font-family: "Avenir LT Std", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../tower1.png");
@@ -31,10 +35,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10%;
+  margin: 2rem 3rem 0 2rem;
 }
 
-nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,11 +49,10 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 85%;
-  margin: 20px auto 0px auto;
+  width: 100%;
 }
 
-nav #logo {
+.nav #logo {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -314,8 +317,22 @@ nav #logo {
 }
 
 .center-info {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 20px 0;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center-text {
   color: #ffffff;
-  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,17 +346,16 @@ nav #logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
   text-align: center;
   line-height: 5rem;
 }
 
-.center-info h1 {
+.center-text h1 {
   font-size: 2.8rem;
   font-weight: 400;
 }
 
-.center-info p {
+.center-text p {
   font-size: 3rem;
   font-weight: 750;
 }
@@ -386,5 +402,60 @@ nav #logo {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
   }
+}
+
+#call-back-element {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+#about {
+  height: 100vh;
+  margin: 2rem 3rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about p {
+  color: #5b5f61;
+  font-weight: 350;
+}
+
+.text-part {
+  width: 35rem;
+}
+
+.text-part h2 {
+  font-weight: 750;
+  margin-bottom: 20px;
+}
+
+.text-part p {
+  line-height: 1.7rem;
+}
+
+.number {
+  height: 3rem;
+  width: 14rem;
+  margin: 5px;
+  display: inline-block;
+}
+
+.number-unit {
+  color: #c4762b;
+  margin-bottom: 4px;
+}
+
+.bottom-about img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40rem;
+  width: 40rem;
 }
 /*# sourceMappingURL=style-home.css.map */
