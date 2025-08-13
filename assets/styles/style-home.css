@@ -67,10 +67,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 55%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 60%;
 }
 
 .nav-element ul {
@@ -80,65 +80,52 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   color: #ffffff;
-  gap: 10px;
+  gap: 20px;
 }
 
 .nav-element ul li {
   text-transform: uppercase;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   list-style-type: none;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
   font-weight: 350;
   font-size: 1.5rem;
-  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav-element ul li.nav-var::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: -10px;
-  height: 0.1rem;
-  width: 0%;
-  border-radius: 1.5px;
-  background-color: #ffffff;
-}
-
-.nav-element ul li.nav-var:hover::before {
-  width: 100%;
-  -webkit-animation: underLine 0.5s ease-in-out;
-          animation: underLine 0.5s ease-in-out;
-}
-
-.nav-element ul li.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-  height: 0.2rem;
-  width: 100%;
-  border-radius: 1.5px;
-  background-color: #ffffff;
+.nav-element ul li span {
+  white-space: nowrap;
 }
 
 .nav-element ul li #img-menu {
   position: relative;
   width: 2rem;
   height: auto;
+}
+
+.nav-element ul li #img-menu:hover #menu-visibility {
+  display: block;
 }
 
 .nav-element ul li img {
@@ -148,10 +135,6 @@ header {
   left: 0;
   -webkit-animation: opacityChange 0.5s ease-out;
           animation: opacityChange 0.5s ease-out;
-}
-
-.nav-element ul li:nth-child(4):hover #menu-visibility {
-  display: block;
 }
 
 .nav-element ul li #menu-img-1 {
@@ -176,9 +159,9 @@ header {
 
 .nav-element ul li a {
   width: 100%;
-  font-size: 1.2em;
   color: #ffffff;
   text-decoration: none;
+  position: relative;
 }
 
 .nav-element ul li a:visited {
@@ -186,7 +169,37 @@ header {
   color: #ffffff;
 }
 
+.nav-element ul li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -10px;
+  height: 0.1rem;
+  width: 0%;
+  border-radius: 1.5px;
+  background-color: #ffffff;
+}
+
+.nav-element ul li a:hover::before {
+  -webkit-animation: underLine 0.5s ease-in-out forwards;
+          animation: underLine 0.5s ease-in-out forwards;
+}
+
+.nav-element ul li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 1.5px;
+  background-color: #ffffff;
+}
+
 .nav-element ul li:last-child {
+  height: 50%;
   padding: 10px 30px;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.3);
