@@ -1,16 +1,4 @@
 @import url("../fonts/fonts.css");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Avenir LT Std", serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 header {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../tower1.png");
@@ -426,12 +414,6 @@ header {
   }
 }
 
-#call-back-element {
-  position: absolute;
-  right: 10px;
-  bottom: 5px;
-}
-
 #about {
   min-height: 100vh;
   margin: 2rem 8rem 0 8rem;
@@ -535,5 +517,54 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#map {
+  min-height: 100vh;
+  background-image: url("/assets/map.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.button-map {
+  display: inline;
+  height: auto;
+}
+
+.button-square {
+  width: 4rem;
+}
+
+#our-projects-scroll {
+  display: none;
+}
+
+.button-test {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#d9d9d9));
+  background: linear-gradient(white, #d9d9d9);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: inset 0px -4px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px -4px 5px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Avenir LT Std", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#call-back-element {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
 }
 /*# sourceMappingURL=style-home.css.map */
