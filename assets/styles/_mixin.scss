@@ -1,3 +1,7 @@
 @mixin marginsSide {
   margin: 2rem 8rem 0 8rem;
 }
+@mixin white-to-gray-gradient {
+  background: linear-gradient(rgb(255, 255, 255), #d9d9d9);
+  box-shadow: inset 0px -4px 5px rgba(0, 0, 0, 0.3);
+}

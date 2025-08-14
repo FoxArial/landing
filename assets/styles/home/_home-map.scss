@@ -5,6 +5,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
+  position: relative;
 }
 .button-square {
   width: 4rem;
@@ -13,9 +14,84 @@
   display: none;
 }
 .button-map {
-  background: linear-gradient(rgb(255, 255, 255), #d9d9d9);
-  width: 3rem;
-  height: 3rem;
+  @include white-to-gray-gradient();
   border-radius: 0.5rem;
-  box-shadow: inset 0px -4px 5px rgba(0, 0, 0, 0.3);
+}
+.button-map-left-part {
+  .button-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .earth {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: 5rem;
+  }
+  .search {
+    position: absolute;
+    max-width: 25rem;
+    width: 100%;
+    height: 3rem;
+    right: 2rem;
+    top: 9rem;
+    display: flex;
+    justify-content: flex-end;
+    .box {
+      position: relative;
+      height: inherit;
+      max-width: 50px;
+      transition: all 0.4s ease;
+
+      input {
+        //position: absolute;
+        width: 100%;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: 350;
+        margin-left: 3rem;
+      }
+      label {
+        //position: absolute;
+        height: 100%;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+    #search-label {
+      position: absolute;
+      height: 100%;
+      width: 3rem;
+      left: 0.2rem;
+    }
+    #cancel-label {
+      color: $brownColor;
+      font-size: 1.2rem;
+      font-weight: 350;
+      user-select: none;
+      opacity: 0;
+      margin-right: 1rem;
+      transition: opacity 0.35s ease;
+    }
+    #check-search-element:checked ~ .box {
+      max-width: 350px;
+      #cancel-label {
+        opacity: 1;
+      }
+    }
+    #check-search-element {
+      display: none;
+    }
+  }
 }
