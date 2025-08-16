@@ -199,6 +199,7 @@
         </div>
       </div>
     </div>
+    <input type="checkbox" id="zoom-map" />
     <div id="map">
       <div class="button-map-left-part">
         <div class="button-map earth">
@@ -248,67 +249,83 @@
         </div>
       </div>
       <div class="zoom-element-map">
-        <input type="checkbox" id="zoom-map">
-      <div class="button-map zoom-out">
-        <label for="zoom-map"><p>Zoom Out</p></label>
-      </div>
-      <div id="zoom-elements">
-        <h3 class="zoom-name">northen region</h3>
-        <h3 class="zoom-name"><label for="zoom-map">central region</label></h3>
-        <h3 class="zoom-name">southern region</h3>
-        <div class="zoom-elements-map-part">
-          <div class="zoom-elements-map-part-element">
-            <h3>Ridyadh</h3>
-            <div class="line">
-              <svg
-                width="168"
-                height="81"
-                viewBox="0 0 168 81"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M167.222 80.3333L146.111 1.44446H0.555542"
-                  stroke="white"
-                  stroke-width="1.11111"
-                />
-              </svg>
-            </div>
-            <div class="map-part">
-              <svg
-                width="92"
-                height="82"
-                viewBox="0 0 92 82"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M49.4445 0.444427C34.3334 2.2222 25.3704 18.9629 22.7778 27.1111C20.5556 32.2963 13.6667 46.8889 3.88893 63.7778C-8.33329 84.8889 16.1112 86 29.4445 72.6666C42.7778 59.3333 49.4445 53.7778 62.7778 57.1111C76.1112 60.4444 90.5556 38.2222 91.6667 27.1111C92.7778 16 68.3334 -1.7778 49.4445 0.444427Z"
-                  fill="#D9D9D9"
-                  fill-opacity="0.6"
-                />
-              </svg>
-            </div>
+        <label for="zoom-map">
+          <div class="button-map zoom-out">
+            <p>Zoom Out</p>
           </div>
-          <div class="zoom-elements-map-part-element">
-            <h3>Buraydah</h3>
-            <div class="line">
-              <svg width="96" height="81" viewBox="0 0 96 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M95.3334 80L83.3704 1.11108H0.888916" stroke="white" stroke-width="1.11111"/>
+        </label>
+        <div id="zoom-elements">
+          <h3 class="zoom-name">northen region</h3>
+          <label for="zoom-map">
+            <h3 class="zoom-name" id="zoom-map-central-region">
+              central region
+            </h3></label
+          >
+          <h3 class="zoom-name">southern region</h3>
+          <div class="zoom-elements-map-part">
+            <div class="zoom-elements-map-part-element" id="Ridyadh">
+              <h3>Ridyadh</h3>
+              <div class="line">
+                <svg
+                  width="6rem"
+                  viewBox="0 0 168 81"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M167.222 80.3333L146.111 1.44446H0.555542"
+                    stroke="white"
+                    stroke-width="1.11111"
+                  />
                 </svg>
-                
+              </div>
+              <div class="map-part">
+                <svg
+                  viewBox="0 0 92 82"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M49.4445 0.444427C34.3334 2.2222 25.3704 18.9629 22.7778 27.1111C20.5556 32.2963 13.6667 46.8889 3.88893 63.7778C-8.33329 84.8889 16.1112 86 29.4445 72.6666C42.7778 59.3333 49.4445 53.7778 62.7778 57.1111C76.1112 60.4444 90.5556 38.2222 91.6667 27.1111C92.7778 16 68.3334 -1.7778 49.4445 0.444427Z"
+                    fill="#D9D9D9"
+                    fill-opacity="0.6"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="map-part">
-              <svg width="92" height="94" viewBox="0 0 92 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M49.2123 0.190032C34.1012 1.96781 25.1382 18.7085 22.5456 26.8567C20.3234 32.0419 13.4345 46.6345 3.65675 63.5234C-8.56547 84.6345 15.879 85.7456 29.2123 72.4122C42.5456 59.0789 52.5556 90 65.8889 93.3333C79.2223 96.6667 90.3234 37.9678 91.4345 26.8567C92.5456 15.7456 68.1012 -2.03219 49.2123 0.190032Z" fill="#D9D9D9" fill-opacity="0.6"/>
+            <div class="zoom-elements-map-part-element" id="Buraydah">
+              <h3>Buraydah</h3>
+              <div class="line">
+                <svg
+                  width="4rem"
+                  viewBox="0 0 96 81"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M95.3334 80L83.3704 1.11108H0.888916"
+                    stroke="white"
+                    stroke-width="1.11111"
+                  />
                 </svg>
-                
-              </svg>
+              </div>
+              <div class="map-part">
+                <svg
+                  viewBox="0 0 92 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M49.2123 0.190032C34.1012 1.96781 25.1382 18.7085 22.5456 26.8567C20.3234 32.0419 13.4345 46.6345 3.65675 63.5234C-8.56547 84.6345 15.879 85.7456 29.2123 72.4122C42.5456 59.0789 52.5556 90 65.8889 93.3333C79.2223 96.6667 90.3234 37.9678 91.4345 26.8567C92.5456 15.7456 68.1012 -2.03219 49.2123 0.190032Z"
+                    fill="#D9D9D9"
+                    fill-opacity="0.6"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       <div class="all-projects">
         <div class="button-map all-projects-button-part">
           <p>All projects</p>
