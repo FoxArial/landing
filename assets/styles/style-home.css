@@ -572,7 +572,9 @@ header {
 .button-map-left-part .search {
   position: absolute;
   max-width: 25rem;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 3rem;
   right: 2rem;
   top: 9rem;
@@ -648,6 +650,65 @@ header {
 
 .button-map-left-part .search #check-search-element {
   display: none;
+}
+
+.zoom-out {
+  font-weight: 350;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 45%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#zoom-elements .zoom-name {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 350;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: inline;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#zoom-elements .zoom-name:first-of-type {
+  left: 30%;
+  top: 18%;
+}
+
+#zoom-elements .zoom-name:last-of-type {
+  top: 55%;
+  left: 34%;
+}
+
+#zoom-elements h3::after {
+  content: "1";
+  margin-left: 1rem;
+  background-color: #ffffff;
+  color: #272622;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100%;
+}
+
+#zoom-elements h3:first-of-type::after {
+  content: "5";
+}
+
+.zoom-elements-map-part {
+  display: inline;
 }
 
 * {

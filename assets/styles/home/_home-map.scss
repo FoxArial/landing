@@ -37,7 +37,7 @@
   .search {
     position: absolute;
     max-width: 25rem;
-    width: 100%;
+    width: fit-content;
     height: 3rem;
     right: 2rem;
     top: 9rem;
@@ -50,7 +50,6 @@
       transition: all 0.4s ease;
 
       input {
-        //position: absolute;
         width: 100%;
         outline: none;
         background-color: transparent;
@@ -60,7 +59,6 @@
         margin-left: 3rem;
       }
       label {
-        //position: absolute;
         height: 100%;
         display: flex;
         cursor: pointer;
@@ -94,4 +92,53 @@
       display: none;
     }
   }
+}
+.zoom-out {
+  font-weight: 350;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 45%;
+  user-select: none;
+}
+#zoom-elements {
+  .zoom-name {
+    text-transform: uppercase;
+    color: $whiteCOlor;
+    font-weight: 350;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: inline;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    user-select: none;
+    &:first-of-type {
+      left: 30%;
+      top: 18%;
+    }
+    &:last-of-type {
+      top: 55%;
+      left: 34%;
+    }
+  }
+  h3 {
+    &::after {
+      content: "1";
+      margin-left: 1rem;
+      background-color: $whiteCOlor;
+      color: $mainColor;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100%;
+    }
+    &:first-of-type::after {
+      content: "5";
+    }
+  }
+}
+.zoom-elements-map-part {
+  display: inline;
 }
