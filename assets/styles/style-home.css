@@ -312,7 +312,6 @@ header {
   overflow: hidden;
   min-width: auto;
   max-width: 45%;
-  background: pink;
   height: auto;
 }
 #about-img img {
@@ -340,6 +339,7 @@ header {
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/map.jpg") center/cover no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
 #map::before {
@@ -579,12 +579,137 @@ header {
   visibility: visible;
 }
 
+.button-map.all-projects-button-part {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  left: 0px;
+  top: 40%;
+  padding: 1.2rem;
+  padding-left: 2.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#Our-projects-checkbox:checked ~ .all-projects {
+  visibility: visible;
+  opacity: 1;
+}
+
 .all-projects {
   position: absolute;
+  width: 29rem;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  height: 100%;
+  background-color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+#our-projects {
+  height: 100%;
+  position: relative;
 }
 
 #our-projects-scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 1;
+}
+#our-projects-scroll h2 {
+  font-weight: 350;
+  font-size: 2rem;
+  width: 85%;
+  margin: 1rem auto;
+}
+#our-projects-scroll span {
+  color: #c4762b;
+}
+
+#slide-element {
+  position: absolute;
+  right: -3rem;
+  top: 40%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.our-projects-card {
+  width: 85%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.5rem auto;
+}
+
+.our-projects-title {
+  margin-bottom: 0.5rem;
+}
+.our-projects-title h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+.our-projects-title p {
+  color: #5b5f61;
+  font-weight: 350;
+}
+
+.our-projects-button-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.our-projects-button-info .our-projects-text {
+  display: flex;
+  gap: 2rem;
+}
+.our-projects-button-info .our-projects-text .our-projects-text-info {
+  font-weight: 350;
+  font-size: 1.1rem;
+}
+.our-projects-button-info .our-projects-text .our-projects-text-info .our-projects-numbers {
+  margin: 0.5rem 0;
+}
+.our-projects-button-info .our-projects-text .our-projects-text-info .our-projects-numbers-info {
+  color: #5b5f61;
+}
+.our-projects-button-info .our-projects-button {
+  font-size: 1.1rem;
+  color: #c4762b;
+  border: 1px solid #c4762b;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.our-projects-img {
+  width: 100%;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.our-projects-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scaleY(1.5) translateY(0.5rem);
 }
 
 * {

@@ -5,6 +5,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("/assets/map.jpg") center/cover no-repeat;
   position: relative;
+  overflow: hidden;
 }
 #map::before {
   content: "";
@@ -242,10 +243,122 @@
     }
   }
 }
+.button-map.all-projects-button-part {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  left: 0px;
+  top: 40%;
+  padding: 1.2rem;
+  padding-left: 2.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+#Our-projects-checkbox:checked ~ .all-projects {
+  visibility: visible;
+  opacity: 1;
+}
 .all-projects {
   position: absolute;
+  width: 29rem;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  height: 100%;
+  background-color: $whiteCOlor;
+  transition: all 0.5s ease;
 }
 
+#our-projects {
+  height: 100%;
+  position: relative;
+}
 #our-projects-scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  h2 {
+    font-weight: 350;
+    font-size: 2rem;
+    width: 85%;
+    margin: 1rem auto;
+  }
+  span {
+    color: $brownColor;
+  }
+  z-index: 1;
+}
+#slide-element {
+  position: absolute;
+  right: -3rem;
+  top: 40%;
+  background-color: $whiteCOlor;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem;
+  z-index: 0;
+  cursor: pointer;
+}
+.our-projects-card {
+  width: 85%;
+  height: fit-content;
+  margin: 1.5rem auto;
+}
+.our-projects-title {
+  margin-bottom: 0.5rem;
+  h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 350;
+  }
+  p {
+    color: $gray2Color;
+    font-weight: 350;
+  }
+}
+.our-projects-button-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  .our-projects-text {
+    display: flex;
+    gap: 2rem;
+    .our-projects-text-info {
+      font-weight: 350;
+      font-size: 1.1rem;
+      .our-projects-numbers {
+        margin: 0.5rem 0;
+      }
+      .our-projects-numbers-info {
+        color: $gray2Color;
+      }
+    }
+  }
+  .our-projects-button {
+    font-size: 1.1rem;
+    color: $brownColor;
+    border: 1px solid $brownColor;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+}
+
+.our-projects-img {
+  width: 100%;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleY(1.5) translateY(0.5rem);
+  }
 }
