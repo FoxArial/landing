@@ -1,0 +1,144 @@
+@import "../mixin";
+#newest-projects {
+  min-height: 100vh;
+  width: 100%;
+  user-select: none;
+  h3 {
+    @include marginsSide();
+    font-size: 2.5rem;
+    font-weight: 750;
+  }
+}
+.newest-projects-grid {
+  min-height: 100vh;
+  margin-top: 2rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 25%));
+  grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-content: center;
+}
+.newest-projects-grid > div {
+  aspect-ratio: 16 / 9;
+}
+.newest-projects-grid-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 2rem;
+}
+.grid-card-1 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/tower1.png");
+}
+.grid-card-2 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Aimaather.png");
+  background-size: 150% 100%;
+}
+.grid-card-3 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tharwa.png");
+  background-size: 100% 110%;
+}
+.grid-card-4 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tahlia.png");
+  background-size: 100% 125%;
+}
+.grid-card-5 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tharwa2.png");
+}
+.grid-card-6 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tahlia2.png");
+}
+.grid-card-7 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Citylife.png");
+}
+.grid-card-8 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Aimaather2.png");
+}
+.card-info {
+  color: $whiteCOlor;
+  font-size: 1.4rem;
+  transition: all 0.5s ease;
+  z-index: 2;
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-weight: 350;
+    font-size: 1.2rem;
+  }
+}
+.newest-projects-grid-card-hover-info {
+  height: 80%;
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 350;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  z-index: 2;
+  .newest-projects-grid-card-hover-button {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+  }
+}
+.newest-projects-grid-card:hover {
+  background: #ffe9ce;
+  .card-info {
+    color: black;
+  }
+  .newest-projects-grid-card-hover-info {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.grid-card-1:hover {
+  background: #eeedec;
+}
