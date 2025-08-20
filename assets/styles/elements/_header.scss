@@ -1,15 +1,14 @@
 @import "../mixin";
 header {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../tower1.png");
+  min-height: 100vh;
+  min-height: 100dvh;
   background-size: cover;
   background-position: 0 -12px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .top-part {
-  height: 90%;
   display: flex;
   flex-direction: column;
   @include marginsSide();
@@ -194,11 +193,7 @@ header {
   }
 }
 .center-info {
-  align-self: center;
-  margin: 20px 0;
-  flex-grow: 2;
-  display: flex;
-  justify-content: center;
+  @include marginsSide();
 }
 .center-text {
   user-select: none;
@@ -208,24 +203,24 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 8rem;
+  line-height: clamp(4.5rem, calc(5vw - 1rem), 10rem);
   h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, calc(3vw - 1rem), 4.5rem);
     font-weight: 400;
   }
   p {
-    font-size: 5rem;
+    font-size: clamp(3rem, calc(4vw - 1rem), 5rem);
     font-weight: 750;
   }
 }
 
 .bottom-part {
   background-color: $whiteColorSecondScreen;
-  height: 10%;
+  height: clamp(3rem, calc(5vw - 2rem), 6rem);
   img {
-    height: 75%;
+    height: clamp(2rem, calc(5vw - 2rem), 5rem);
     width: auto;
-    margin: 2px auto 0 auto;
+    margin: 0.3rem auto 0 auto;
     display: block;
     animation: arrow 1.5s ease-in-out infinite;
   }
@@ -239,5 +234,10 @@ header {
     100% {
       transform: translate(0px, 0px);
     }
+  }
+}
+@media (max-width: 720px) {
+  .nav-element a {
+    display: none;
   }
 }

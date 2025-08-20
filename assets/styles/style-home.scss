@@ -1,9 +1,9 @@
 @import "./variables";
-@import "./home/home-header";
+@import "./elements/header";
 @import "./home/home-about";
 @import "./home/home-map";
 @import "./home/home-newestProjects";
-@import "./home//home-footer";
+@import ".//elements/footer";
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +13,14 @@
 html {
   scroll-behavior: smooth;
 }
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../tower1.png");
+}
 
 #call-back-element {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
+  height: auto;
   position: fixed;
   right: 10px;
   bottom: 5px;
