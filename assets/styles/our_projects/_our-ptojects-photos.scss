@@ -1,0 +1,115 @@
+@import "../mixin";
+#photo-grid {
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: clamp(2rem, calc(4vw - 1rem), 5rem) auto 1rem auto;
+  user-select: none;
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2, minmax(40vw, 1fr));
+  justify-content: center;
+  gap: clamp(1rem, calc(2vh - 1rem), 2rem);
+}
+.photo-grid-element {
+  aspect-ratio: 1/0.79;
+  color: $whiteCOlor;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: clamp(1.5rem, calc(4vw - 1rem), 4.5rem)
+    clamp(1.5rem, calc(4vw - 1rem), 4.5rem);
+  z-index: 0;
+  h3 {
+    font-size: clamp(1rem, calc(3vw - 1.8rem), 4rem);
+    margin-bottom: clamp(0.8rem, calc(2vw - 1.5rem), 2rem);
+    z-index: 2;
+  }
+  p {
+    font-weight: 350;
+    font-size: clamp(0.8rem, calc(3vw - 1.8rem), 3rem);
+    z-index: 2;
+  }
+}
+.photo-grid-element::after {
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  inset: 0;
+  z-index: -1;
+  transition: all 0.5s ease;
+  background-size: 115%;
+}
+.element-1 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tharwa.png");
+}
+.element-1::after {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tharwa.png");
+  background-position: left center;
+  background-size: 105%;
+}
+.element-2 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/tower1.png");
+}
+.element-2::after {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/tower1.png");
+  background-position: 25% center;
+}
+.element-3 {
+  grid-row: span 2;
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Aimaather.png");
+  background-position: 31% 100%;
+}
+.element-4 {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tahlia2.png");
+}
+.element-4::after {
+  background-image: linear-gradient(
+      -0deg,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/Tahlia2.png");
+  background-position: 40% center;
+  background-size: 150%;
+}
+.photo-grid-element:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

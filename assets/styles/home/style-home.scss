@@ -1,9 +1,9 @@
-@import "./variables";
-@import "./elements/header";
-@import "./home/home-about";
-@import "./home/home-map";
-@import "./home/home-newestProjects";
-@import ".//elements/footer";
+@import "../variables";
+@import "../elements/header";
+@import "./home-about";
+@import "./home-map";
+@import "./home-newestProjects";
+@import "../elements/footer";
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ html {
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../tower1.png");
+    url("/assets/tower1.png");
 }
 
 #call-back-element {

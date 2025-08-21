@@ -1,0 +1,83 @@
+@import "../variables";
+@import "../elements/header";
+@import "../elements/footer";
+@import "../variables";
+@import "./our-ptojects-photos";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir LT Std", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  min-height: fit-content;
+  background-color: $whiteCOlor;
+  gap: 1rem;
+  .nav {
+    #logo {
+      height: 94px;
+      width: auto;
+    }
+  }
+  .nav-element {
+    ul {
+      color: $grayColor;
+    }
+    li {
+      a {
+        color: $grayColor;
+        &:visited {
+          color: $grayColor;
+        }
+        &::before {
+          background-color: $grayColor;
+        }
+        &.active::after {
+          background-color: $grayColor;
+        }
+      }
+      &:last-child:hover {
+        color: $whiteCOlor;
+      }
+    }
+  }
+  #menu {
+    .menu-element {
+      color: $whiteCOlor;
+      background-color: $grayColor;
+      &:hover {
+        background-color: $grayHoverColor;
+      }
+    }
+  }
+  .center-text {
+    color: $grayColor;
+    display: flex;
+    line-height: clamp(4.5rem, calc(5vw - 1rem), 10rem);
+    h1 {
+      font-size: clamp(2.8rem, calc(4vw - 1.5rem), 5rem);
+      font-weight: 750;
+    }
+    h2 {
+      font-size: clamp(2.2rem, calc(3vw - 1rem), 4.5rem);
+      font-weight: 400;
+    }
+    p {
+      width: 80%;
+      font-weight: 350;
+      color: $gray2Color;
+      line-height: clamp(2rem, calc(4vw - 1.5rem), 3.5rem);
+      font-size: clamp(1.1rem, calc(3vw - 1.7rem), 2.5rem);
+    }
+  }
+}
+#call-back-element {
+  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
+  height: auto;
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+}

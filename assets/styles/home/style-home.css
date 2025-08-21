@@ -1,4 +1,4 @@
-@import url("../fonts/fonts.css");
+@import url("/assets/fonts/fonts.css");
 header {
   min-height: 100vh;
   min-height: 100dvh;
@@ -1302,8 +1302,8 @@ html {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../tower1.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../tower1.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/assets/tower1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/tower1.png");
 }
 
 #call-back-element {
