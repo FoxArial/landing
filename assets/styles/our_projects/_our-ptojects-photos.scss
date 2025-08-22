@@ -23,13 +23,13 @@
     clamp(1.5rem, calc(4vw - 1rem), 4.5rem);
   z-index: 0;
   h3 {
-    font-size: clamp(1rem, calc(3vw - 1.8rem), 4rem);
+    font-size: clamp(1.3rem, calc(3vw - 1.8rem), 4rem);
     margin-bottom: clamp(0.8rem, calc(2vw - 1.5rem), 2rem);
     z-index: 2;
   }
   p {
     font-weight: 350;
-    font-size: clamp(0.8rem, calc(3vw - 1.8rem), 3rem);
+    font-size: clamp(1rem, calc(3vw - 1.8rem), 3rem);
     z-index: 2;
   }
 }

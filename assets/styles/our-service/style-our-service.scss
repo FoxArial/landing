@@ -1,0 +1,62 @@
+@import "../variables";
+@import "../elements/header";
+@import "../elements/footer";
+@import "../home/home-newestProjects";
+@import "../our-service/we-elements";
+@import "../our-service/culture-elements";
+@import "../mixin";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir LT Std", serif;
+}
+html {
+  scroll-behavior: smooth;
+  h2 {
+    font-size: clamp(1.2rem, calc(3vw - 1rem), 2.5rem);
+    font-weight: 750;
+  }
+  p {
+    font-weight: 400;
+    font-size: clamp(1rem, calc(3vw - 2.1rem), 2rem);
+    line-height: clamp(1.5rem, calc(4vw - 1.8rem), 3.5rem);
+  }
+}
+header {
+  min-height: 95vh;
+  justify-content: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/assets/group-people.png");
+  .center-info {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      font-size: clamp(3rem, calc(5vw - 1rem), 5.5rem);
+      font-weight: 750;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: $whiteCOlor;
+      line-height: normal;
+      font-size: clamp(2rem, calc(4vw - 1rem), 4.5rem);
+    }
+  }
+}
+#newest-projects {
+  margin: 0;
+  h2 {
+    margin: #{"min(5rem, 5%)"};
+  }
+}
+
+#call-back-element {
+  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
+  height: auto;
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+}

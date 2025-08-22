@@ -1,0 +1,40 @@
+@import "../mixin";
+#culture-elements {
+  min-height: 50vh;
+  background-color: #ededed;
+  padding-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-part {
+  flex-grow: 1;
+  text-transform: capitalize;
+
+  h2 {
+    margin-bottom: 0.8rem;
+  }
+  p {
+    color: $gray2Color;
+  }
+}
+.right-part {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  place-items: center;
+}
+.right-part-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 100%;
+  svg {
+    width: clamp(3rem, calc(6vw - 1rem), 8rem);
+    height: auto;
+  }
+  p {
+    text-align: center;
+  }
+}
