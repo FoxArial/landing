@@ -52,7 +52,7 @@
       rgba(255, 255, 255, 0) 55%,
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/Tharwa.png");
+    url("/src/assets/img/Tharwa.png");
 }
 .element-1::after {
   background-image: linear-gradient(
@@ -60,7 +60,7 @@
       rgba(255, 255, 255, 0) 55%,
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/Tharwa.png");
+    url("/src/assets/img/Tharwa.png");
   background-position: left center;
   background-size: 105%;
 }
@@ -70,7 +70,7 @@
       rgba(255, 255, 255, 0) 55%,
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/tower1.png");
+    url("/src/assets/img/tower1.png");
 }
 .element-2::after {
   background-image: linear-gradient(
@@ -78,7 +78,7 @@
       rgba(255, 255, 255, 0) 55%,
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/tower1.png");
+    url("/src/assets/img/tower1.png");
   background-position: 25% center;
 }
 .element-3 {
@@ -88,7 +88,7 @@
       rgba(255, 255, 255, 0) 55%,
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/Aimaather.png");
+    url("/src/assets/img/Aimaather.png");
   background-position: 31% 100%;
 }
 .element-4 {
@@ -97,7 +97,7 @@
       rgba(255, 255, 255, 0) 55%,
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/Tahlia2.png");
+    url("/src/assets/img/Tahlia2.png");
 }
 .element-4::after {
   background-image: linear-gradient(
@@ -105,7 +105,7 @@
       rgba(255, 255, 255, 0) 55%,
       rgba(0, 0, 0, 0.7)
     ),
-    url("/assets/Tahlia2.png");
+    url("/src/assets/img/Tahlia2.png");
   background-position: 40% center;
   background-size: 150%;
 }

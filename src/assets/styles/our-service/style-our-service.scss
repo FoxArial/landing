@@ -29,7 +29,7 @@ header {
   min-height: 95vh;
   justify-content: flex-start;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/assets/group-people.png");
+    url("/src/assets/img/group-people.png");
   .center-info {
     flex-grow: 1;
     display: flex;
@@ -61,4 +61,5 @@ header {
   position: fixed;
   right: 10px;
   bottom: 5px;
+  z-index: 100;
 }

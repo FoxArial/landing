@@ -1,4 +1,4 @@
-@import url("/assets/fonts/fonts.css");
+@import url("/src/assets/fonts/fonts.css");
 header {
   min-height: 100vh;
   min-height: 100dvh;
@@ -517,8 +517,8 @@ header {
   min-height: 100dvh;
   min-height: 100vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/assets/map.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/map.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/src/assets/img/map.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/src/assets/img/map.jpg") center/cover no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -529,8 +529,8 @@ header {
   inset: 0;
   opacity: 1;
   visibility: visible;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/assets/map.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/map.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/src/assets/img/map.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/src/assets/img/map.jpg") center/cover no-repeat;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -1038,44 +1038,44 @@ header {
 }
 
 .grid-card-1 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/tower1.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/tower1.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/tower1.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/tower1.png");
 }
 
 .grid-card-2 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Aimaather.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Aimaather.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Aimaather.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Aimaather.png");
   background-size: 150% 100%;
 }
 
 .grid-card-3 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tharwa.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tharwa.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa.png");
 }
 
 .grid-card-4 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tahlia.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tahlia.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia.png");
 }
 
 .grid-card-5 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tharwa2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tharwa2.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa2.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa2.png");
 }
 
 .grid-card-6 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tahlia2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tahlia2.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia2.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia2.png");
 }
 
 .grid-card-7 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Citylife.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Citylife.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Citylife.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Citylife.png");
 }
 
 .grid-card-8 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Aimaather2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Aimaather2.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Aimaather2.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Aimaather2.png");
 }
 
 .card-info {
@@ -1295,8 +1295,8 @@ html {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/assets/tower1.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/tower1.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/src/assets/img/tower1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/src/assets/img/tower1.png");
 }
 
 #call-back-element {
@@ -1305,5 +1305,6 @@ header {
   position: fixed;
   right: 10px;
   bottom: 5px;
+  z-index: 100;
 }
 /*# sourceMappingURL=style-home.css.map */

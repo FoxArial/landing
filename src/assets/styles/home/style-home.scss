@@ -15,7 +15,7 @@ html {
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/assets/tower1.png");
+    url("/src/assets/img/tower1.png");
 }
 
 #call-back-element {
@@ -24,4 +24,5 @@ header {
   position: fixed;
   right: 10px;
   bottom: 5px;
+  z-index: 100;
 }

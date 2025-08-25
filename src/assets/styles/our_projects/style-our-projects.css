@@ -1,4 +1,4 @@
-@import url("/assets/fonts/fonts.css");
+@import url("/src/assets/fonts/fonts.css");
 header {
   min-height: 100vh;
   min-height: 100dvh;
@@ -535,262 +535,110 @@ footer {
           align-items: center;
 }
 
-#newest-projects {
+#photo-grid {
   min-height: 100vh;
   min-height: 100dvh;
-  margin-bottom: 1rem;
-  width: 100%;
+  margin: clamp(2rem, calc(4vw - 1rem), 5rem) auto 1rem auto;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-#newest-projects h2 {
-  margin: min(2rem, 5%) min(5rem, 5%) 0 min(5rem, 5%);
-  font-size: clamp(1.2rem, calc(3vw - 1rem), 2.5rem);
-  font-weight: 750;
-}
-
-.newest-projects-grid {
-  min-height: 100dvh;
-  min-height: 100vh;
-  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
-  width: 100%;
-  -ms-grid-columns: (minmax(15rem, 25%))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 25%));
-  -ms-grid-rows: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
+  width: 80%;
+  -ms-grid-columns: (minmax(40vw, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(40vw, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: clamp(1rem, calc(2vh - 1rem), 2rem);
 }
 
-.newest-projects-grid-card {
-  position: relative;
+.photo-grid-element {
+  aspect-ratio: 1/0.79;
+  color: #ffffff;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  padding: clamp(0.8rem, calc(3vw - 1rem), 1.5rem) clamp(1rem, calc(3vw - 1rem), 2rem);
+  position: relative;
+  padding: clamp(1.5rem, calc(4vw - 1rem), 4.5rem) clamp(1.5rem, calc(4vw - 1rem), 4.5rem);
+  z-index: 0;
 }
 
-.grid-card-1 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/tower1.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/tower1.png");
-}
-
-.grid-card-2 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Aimaather.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Aimaather.png");
-  background-size: 150% 100%;
-}
-
-.grid-card-3 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tharwa.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tharwa.png");
-}
-
-.grid-card-4 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tahlia.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tahlia.png");
-}
-
-.grid-card-5 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tharwa2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tharwa2.png");
-}
-
-.grid-card-6 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Tahlia2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Tahlia2.png");
-}
-
-.grid-card-7 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Citylife.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Citylife.png");
-}
-
-.grid-card-8 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/assets/Aimaather2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/assets/Aimaather2.png");
-}
-
-.card-info {
-  color: #ffffff;
-  font-size: clamp(1.2rem, calc(3vw - 1.8rem), 2.5rem);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.photo-grid-element h3 {
+  font-size: clamp(1.3rem, calc(3vw - 1.8rem), 4rem);
+  margin-bottom: clamp(0.8rem, calc(2vw - 1.5rem), 2rem);
   z-index: 2;
-  height: 20%;
 }
 
-.card-info h3 {
-  margin-bottom: 0.5rem;
-}
-
-.card-info p {
+.photo-grid-element p {
   font-weight: 350;
-  font-size: clamp(1rem, calc(3vw - 1.8rem), 2rem);
+  font-size: clamp(1rem, calc(3vw - 1.8rem), 3rem);
+  z-index: 2;
 }
 
-.newest-projects-grid-card-hover-info {
-  height: 80%;
-  padding-top: clamp(0.8rem, calc(3vh - 1rem), 2rem);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: clamp(1rem, calc(3vw - 1.8rem), 2rem);
-  font-weight: 350;
+.photo-grid-element::after {
+  content: "";
   opacity: 0;
   visibility: hidden;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  inset: 0;
+  z-index: -1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 2;
+  background-size: 115%;
 }
 
-.newest-projects-grid-card-hover-info .newest-projects-grid-card-hover-button {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.element-1 {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa.png");
 }
 
-.newest-projects-grid-card-hover-info p {
-  padding-top: 0.5rem;
+.element-1::after {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa.png");
+  background-position: left center;
+  background-size: 105%;
 }
 
-.newest-projects-grid-card:hover {
-  background: #ffe9ce;
+.element-2 {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/tower1.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/tower1.png");
 }
 
-.newest-projects-grid-card:hover .card-info {
-  color: black;
+.element-2::after {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/tower1.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/tower1.png");
+  background-position: 25% center;
 }
 
-.newest-projects-grid-card:hover .newest-projects-grid-card-hover-info {
-  opacity: 1;
+.element-3 {
+  grid-row: span 2;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Aimaather.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Aimaather.png");
+  background-position: 31% 100%;
+}
+
+.element-4 {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia2.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia2.png");
+}
+
+.element-4::after {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia2.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia2.png");
+  background-position: 40% center;
+  background-size: 150%;
+}
+
+.photo-grid-element:hover::after {
   visibility: visible;
-}
-
-.grid-card-1:hover {
-  background: #eeedec;
-}
-
-#we-elements {
-  min-height: 30vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1px;
-}
-
-.content-box {
-  width: 80%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: min(3.5rem, 5%) min(5rem, 5%);
-  gap: clamp(2rem, calc(8vw - 2rem), 20rem);
-}
-
-.we-element h2 {
-  margin-bottom: 0.8rem;
-}
-
-.we-element p {
-  color: #5b5f61;
-}
-
-#culture-elements {
-  min-height: 50vh;
-  background-color: #ededed;
-  padding-top: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.left-part {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-transform: capitalize;
-}
-
-.left-part h2 {
-  margin-bottom: 0.8rem;
-}
-
-.left-part p {
-  color: #5b5f61;
-}
-
-.right-part {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(50px, 1fr))[2];
-      grid-template-columns: repeat(2, minmax(50px, 1fr));
-  place-items: center;
-}
-
-.right-part-element {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100%;
-}
-
-.right-part-element svg {
-  width: clamp(3rem, calc(6vw - 1rem), 8rem);
-  height: auto;
-}
-
-.right-part-element p {
-  text-align: center;
-  color: #191919;
+  opacity: 1;
 }
 
 * {
@@ -805,15 +653,88 @@ html {
   scroll-behavior: smooth;
 }
 
-html h2 {
-  font-size: clamp(1.2rem, calc(3vw - 1rem), 2.5rem);
-  font-weight: 750;
+header {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background-color: #ffffff;
+  gap: 1rem;
+}
+
+header .nav {
+  width: auto;
+}
+
+header .nav #logo {
+  height: 94px;
+  width: auto;
+}
+
+header .nav-element ul {
   color: #191919;
 }
 
-html p {
-  font-weight: 400;
-  font-size: clamp(1rem, calc(3vw - 2.1rem), 2rem);
-  line-height: clamp(1.5rem, calc(4vw - 1.8rem), 3.5rem);
+header .nav-element li a {
+  color: #191919;
 }
-/*# sourceMappingURL=style-about-us.css.map */
+
+header .nav-element li a:visited {
+  color: #191919;
+}
+
+header .nav-element li a::before {
+  background-color: #191919;
+}
+
+header .nav-element li a.active::after {
+  background-color: #191919;
+}
+
+header .nav-element li:last-child:hover {
+  color: #ffffff;
+}
+
+header #menu .menu-element {
+  color: #ffffff;
+  background-color: #191919;
+}
+
+header #menu .menu-element:hover {
+  background-color: #363636;
+}
+
+header .center-text {
+  color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: clamp(4.5rem, calc(5vw - 1rem), 10rem);
+}
+
+header .center-text h1 {
+  font-size: clamp(2.8rem, calc(4vw - 1.5rem), 5rem);
+  font-weight: 750;
+}
+
+header .center-text h2 {
+  font-size: clamp(2.2rem, calc(3vw - 1rem), 4.5rem);
+  font-weight: 400;
+}
+
+header .center-text p {
+  width: 80%;
+  font-weight: 350;
+  color: #5b5f61;
+  line-height: clamp(2rem, calc(4vw - 1.5rem), 3.5rem);
+  font-size: clamp(1.1rem, calc(3vw - 1.7rem), 2.5rem);
+}
+
+#call-back-element {
+  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
+  height: auto;
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  z-index: 100;
+}
+/*# sourceMappingURL=style-our-projects.css.map */
