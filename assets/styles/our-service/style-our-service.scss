@@ -16,6 +16,8 @@ html {
   h2 {
     font-size: clamp(1.2rem, calc(3vw - 1rem), 2.5rem);
     font-weight: 750;
+
+    color: $grayColor;
   }
   p {
     font-weight: 400;

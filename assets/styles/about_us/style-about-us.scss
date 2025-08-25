@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../elements/header";
+@import "../elements/footer";
+@import "../home/home-newestProjects";
+@import "../our-service/we-elements";
+@import "../our-service/culture-elements";
+@import "../mixin";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir LT Std", serif;
+}
+html {
+  scroll-behavior: smooth;
+  h2 {
+    font-size: clamp(1.2rem, calc(3vw - 1rem), 2.5rem);
+    font-weight: 750;
+
+    color: $grayColor;
+  }
+  p {
+    font-weight: 400;
+    font-size: clamp(1rem, calc(3vw - 2.1rem), 2rem);
+    line-height: clamp(1.5rem, calc(4vw - 1.8rem), 3.5rem);
+  }
+}

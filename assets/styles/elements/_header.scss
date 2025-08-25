@@ -9,8 +9,6 @@ header {
   justify-content: space-between;
 }
 .top-part {
-  display: flex;
-  flex-direction: column;
   @include marginsSide();
 }
 .nav {
