@@ -11,7 +11,7 @@
     <div class="top-part">
       <div class="nav">
         <a href="/index.html"
-          ><img id="logo" src="/src/assets/img/logo.png" alt="logo"
+          ><img class="logo" src="/src/assets/svg/logo.svg" alt="logo"
         /></a>
         <div class="nav-element">
           <ul>
@@ -25,14 +25,17 @@
               <a href="/src/our-projects.html">our projects</a>
             </li>
             <li>
-              <div id="img-menu">
-                <img id="menu-img-1" src="/src/assets/img/menu-right.png" />
-                <img id="menu-img-2" src="/src/assets/img/menu-left.png" />
-                <div id="menu-visibility">
-                  <div id="menu">
-                    <div class="menu-element">Join us</div>
-                    <div class="menu-element">Contact us</div>
-                    <div class="menu-element">Community portal</div>
+              <div class="menu">
+                <div class="ham-menu">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="menu-visibility">
+                  <div id="hover-menu">
+                    <ul>
+                      <li>Join us</li>
+                      <li>Contact us</li>
+                      <li>Community portal</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -54,123 +57,12 @@
     <div class="bottom-part">
       <a href="#about"><img src="/src/assets/img/arrow-down.png" /></a>
     </div>
-    <div id="call-back-element">
-      <svg viewBox="0 0 117 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_ii_502_1225)">
-          <rect width="117" height="117" rx="58.5" fill="#FBF9F7" />
-          <rect
-            x="0.5"
-            y="0.5"
-            width="116"
-            height="116"
-            rx="58"
-            stroke="#CCCCCC"
-          />
-        </g>
-        <g clip-path="url(#clip0_502_1225)">
-          <path
-            d="M25.0957 58.0718C25.094 64.0831 26.677 69.9527 29.687 75.1263L24.8079 92.8028L43.0389 88.0596C48.0813 90.7834 53.731 92.2106 59.4723 92.211H59.4874C78.4403 92.211 93.8684 76.908 93.8765 58.0987C93.8801 48.9842 90.3061 40.4136 83.8127 33.9655C77.3204 27.518 68.6859 23.9653 59.486 23.9612C40.5308 23.9612 25.1038 39.2633 25.096 58.0718"
-            fill="url(#paint0_linear_502_1225)"
-          />
-          <path
-            d="M23.8679 58.0606C23.8659 64.2883 25.5056 70.3678 28.623 75.7266L23.5688 94.0367L42.4536 89.1236C47.6569 91.9386 53.5154 93.4227 59.4767 93.425H59.492C79.1249 93.425 95.1072 77.5715 95.1156 58.0889C95.119 48.647 91.4164 39.7683 84.691 33.0892C77.9648 26.4109 69.0214 22.7304 59.492 22.7266C39.8558 22.7266 23.8757 38.5778 23.8679 58.0606ZM35.1144 74.8037L34.4093 73.693C31.4451 69.0164 29.8806 63.6122 29.8828 58.0629C29.889 41.8692 43.171 28.6943 59.5032 28.6943C67.4125 28.6977 74.8455 31.757 80.4362 37.3077C86.0266 42.8589 89.1029 50.2382 89.1009 58.0867C89.0937 74.2804 75.8114 87.4569 59.492 87.4569H59.4803C54.1665 87.4541 48.9551 86.0382 44.4102 83.3624L43.3286 82.726L32.122 85.6413L35.1144 74.8037Z"
-            fill="url(#paint1_linear_502_1225)"
-          />
-          <path
-            d="M50.5883 43.2888C49.9215 41.8182 49.2197 41.7885 48.5855 41.7627C48.0663 41.7406 47.4727 41.7422 46.8796 41.7422C46.286 41.7422 45.3215 41.9638 44.5063 42.847C43.6902 43.7311 41.3906 45.8675 41.3906 50.2128C41.3906 54.5582 44.5803 58.7576 45.025 59.3475C45.4702 59.9362 51.1827 69.1385 60.23 72.6787C67.7492 75.6207 69.2793 75.0356 70.9112 74.8881C72.5433 74.7411 76.1777 72.7522 76.9192 70.6898C77.6612 68.6277 77.6612 66.8601 77.4387 66.4908C77.2162 66.1228 76.6226 65.9017 75.7325 65.4603C74.8421 65.0185 70.466 62.8818 69.6502 62.587C68.8341 62.2925 68.2408 62.1455 67.6471 63.0299C67.0535 63.9129 65.349 65.9018 64.8294 66.4908C64.3104 67.0812 63.7909 67.1546 62.901 66.7129C62.0103 66.2697 59.1437 65.3382 55.7427 62.3297C53.0966 59.9886 51.3102 57.0976 50.7909 56.2133C50.2716 55.3303 50.7353 54.8516 51.1816 54.4116C51.5816 54.0158 52.072 53.3802 52.5175 52.8647C52.9613 52.3489 53.1095 51.9809 53.4063 51.3919C53.7034 50.8023 53.5547 50.2865 53.3325 49.8448C53.1095 49.403 51.3798 45.035 50.5883 43.2888Z"
-            fill="white"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_ii_502_1225"
-            x="0"
-            y="-4"
-            width="117"
-            height="125"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="4" />
-            <feGaussianBlur stdDeviation="2" />
-            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0.976471 0 0 0 0 0.968627 0 0 0 0 0.952941 0 0 0 0.25 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="shape"
-              result="effect1_innerShadow_502_1225"
-            />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="-4" />
-            <feGaussianBlur stdDeviation="2" />
-            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="effect1_innerShadow_502_1225"
-              result="effect2_innerShadow_502_1225"
-            />
-          </filter>
-          <linearGradient
-            id="paint0_linear_502_1225"
-            x1="3478.24"
-            y1="6908.12"
-            x2="3478.24"
-            y2="23.9612"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#1FAF38" />
-            <stop offset="1" stop-color="#60D669" />
-          </linearGradient>
-          <linearGradient
-            id="paint1_linear_502_1225"
-            x1="3600.91"
-            y1="7153.74"
-            x2="3600.91"
-            y2="22.7266"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#C2C2C2" />
-            <stop offset="1" stop-color="white" />
-          </linearGradient>
-          <clipPath id="clip0_502_1225">
-            <rect
-              width="71.5468"
-              height="71.5468"
-              fill="white"
-              transform="translate(23.5688 22.7266)"
-            />
-          </clipPath>
-        </defs>
-      </svg>
+    <div class="call-back-element">
+      <img src="/src/assets/svg/call-back.svg" alt="Call Back" />
     </div>
   </header>
   <body>
-    <div id="about">
+    <div class="about">
       <div class="text-part">
         <h2>About Mooton</h2>
         <p>
@@ -196,57 +88,27 @@
             <p class="number-info">Developed an extensive area</p>
           </div>
         </div>
-        <div id="about-img">
+        <div class="about-img">
           <img src="/src/assets/img/Aimaather.png" alt="building" />
         </div>
       </div>
     </div>
     <input type="checkbox" id="zoom-map" />
-    <div id="map">
+    <div class="map">
       <div class="button-map-left-part">
         <div class="button-map earth">
-          <!--id="earth"-->
-          <svg
-            id="earth"
-            viewBox="0 0 36 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.3103 18.1295C1.3103 27.2706 8.72015 34.6805 17.8612 34.6805C27.0023 34.6805 34.4122 27.2706 34.4122 18.1295C34.4122 8.98846 27.0023 1.57861 17.8612 1.57861C8.72015 1.57861 1.3103 8.98846 1.3103 18.1295Z"
-              stroke="#191919"
-              stroke-width="2.38333"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M19.5156 1.66309C19.5156 1.66309 24.4809 8.2007 24.4809 18.1313C24.4809 28.0618 19.5156 34.5994 19.5156 34.5994M16.2054 34.5994C16.2054 34.5994 11.2401 28.0618 11.2401 18.1313C11.2401 8.2007 16.2054 1.66309 16.2054 1.66309M2.35229 23.9241H33.3687M2.35229 12.3384H33.3687"
-              stroke="#191919"
-              stroke-width="2.38333"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <img src="./src/assets/svg/earth.svg" alt="earth" />
         </div>
         <div class="search">
           <input type="checkbox" id="check-search-element" />
           <div class="button-map box">
-            <label for="check-search-element" id="search-label">
-              <!--id="search"-->
-              <svg
-                id="search"
-                viewBox="0 0 33 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23.6479 20.678C25.5979 18.0548 26.4713 14.8025 26.0934 11.5718C25.7154 8.34111 24.1139 5.37021 21.6094 3.2535C19.1048 1.13678 15.8818 0.0303559 12.5853 0.155573C9.28872 0.280791 6.16168 1.62842 3.82977 3.92884C1.49786 6.22927 0.133044 9.31284 0.00838103 12.5626C-0.116282 15.8124 1.0084 18.9888 3.15741 21.4563C5.30643 23.9237 8.32129 25.5003 11.5988 25.8706C14.8764 26.2409 18.1749 25.3776 20.8345 23.4534H20.8325C20.8915 23.5328 20.9573 23.6089 21.0298 23.6817L28.7833 31.325C29.1609 31.6975 29.6732 31.9069 30.2074 31.9071C30.7416 31.9072 31.254 31.6982 31.6319 31.326C32.0098 30.9537 32.2222 30.4487 32.2224 29.9221C32.2226 29.3955 32.0106 28.8903 31.6329 28.5178L23.8795 20.8745C23.8075 20.8026 23.7301 20.7382 23.6479 20.678ZM24.1675 13.0466C24.1675 14.4805 23.881 15.9003 23.3243 17.2251C22.7677 18.5499 21.9518 19.7536 20.9233 20.7675C19.8947 21.7814 18.6737 22.5857 17.3298 23.1344C15.986 23.6831 14.5457 23.9656 13.0911 23.9656C11.6365 23.9656 10.1962 23.6831 8.85235 23.1344C7.5085 22.5857 6.28745 21.7814 5.25891 20.7675C4.23038 19.7536 3.4145 18.5499 2.85786 17.2251C2.30122 15.9003 2.01472 14.4805 2.01472 13.0466C2.01472 10.1507 3.18169 7.3734 5.25891 5.32569C7.33614 3.27798 10.1535 2.12759 13.0911 2.12759C16.0287 2.12759 18.846 3.27798 20.9233 5.32569C23.0005 7.3734 24.1675 10.1507 24.1675 13.0466Z"
-                  fill="#191919"
-                />
-              </svg>
+            <label for="check-search-element" class="search-label">
+              <img src="./src/assets/svg/search.svg" alt="search" />
             </label>
             <input type="text" placeholder="Enter city or project" />
-            <label for="check-search-element" id="cancel-label">Cancel</label>
+            <label for="check-search-element" class="cancel-label"
+              >Cancel</label
+            >
           </div>
         </div>
       </div>
@@ -256,7 +118,7 @@
             <p>Zoom Out</p>
           </div>
         </label>
-        <div id="zoom-elements">
+        <div class="zoom-elements">
           <h3 class="zoom-name">northen region</h3>
           <label for="zoom-map">
             <h3 class="zoom-name" id="zoom-map-central-region">
@@ -268,61 +130,31 @@
             <div class="zoom-elements-map-part-element" id="Ridyadh">
               <h3>Ridyadh</h3>
               <div class="line">
-                <svg
-                  width="6rem"
-                  viewBox="0 0 168 81"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M167.222 80.3333L146.111 1.44446H0.555542"
-                    stroke="white"
-                    stroke-width="1.11111"
-                  />
-                </svg>
+                <img
+                  src="./src/assets/svg/map-middle-line1.svg"
+                  alt="line to Ridyadh"
+                />
               </div>
               <div class="map-part">
-                <svg
-                  viewBox="0 0 92 82"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M49.4445 0.444427C34.3334 2.2222 25.3704 18.9629 22.7778 27.1111C20.5556 32.2963 13.6667 46.8889 3.88893 63.7778C-8.33329 84.8889 16.1112 86 29.4445 72.6666C42.7778 59.3333 49.4445 53.7778 62.7778 57.1111C76.1112 60.4444 90.5556 38.2222 91.6667 27.1111C92.7778 16 68.3334 -1.7778 49.4445 0.444427Z"
-                    fill="#D9D9D9"
-                    fill-opacity="0.6"
-                  />
-                </svg>
+                <img
+                  src="./src/assets/svg/map-middle-mappart1.svg"
+                  alt="Ridyadh"
+                />
               </div>
             </div>
             <div class="zoom-elements-map-part-element" id="Buraydah">
               <h3>Buraydah</h3>
               <div class="line">
-                <svg
-                  width="4rem"
-                  viewBox="0 0 96 81"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M95.3334 80L83.3704 1.11108H0.888916"
-                    stroke="white"
-                    stroke-width="1.11111"
-                  />
-                </svg>
+                <img
+                  src="./src/assets/svg/map-middle-line2.svg"
+                  alt="line to Buraydah"
+                />
               </div>
               <div class="map-part">
-                <svg
-                  viewBox="0 0 92 94"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M49.2123 0.190032C34.1012 1.96781 25.1382 18.7085 22.5456 26.8567C20.3234 32.0419 13.4345 46.6345 3.65675 63.5234C-8.56547 84.6345 15.879 85.7456 29.2123 72.4122C42.5456 59.0789 52.5556 90 65.8889 93.3333C79.2223 96.6667 90.3234 37.9678 91.4345 26.8567C92.5456 15.7456 68.1012 -2.03219 49.2123 0.190032Z"
-                    fill="#D9D9D9"
-                    fill-opacity="0.6"
-                  />
-                </svg>
+                <img
+                  src="./src/assets/svg/map-middle-mappart2.svg"
+                  alt="Buraydah"
+                />
               </div>
             </div>
           </div>
@@ -332,47 +164,23 @@
       <label for="Our-projects-checkbox"
         ><div class="button-map all-projects-button-part">
           <p>All projects</p>
-          <!--id="arrow-right"-->
-          <svg
-            id="arrow-right"
-            width="1rem"
-            height="1.2rem"
-            viewBox="0 0 14 23"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M1.99995 20.9729L11.7222 11.4822L1.99995 1.99146"
-              stroke="#191919"
-              stroke-width="3.33333"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg></div
+          <img
+            class="arrow-right"
+            src="/src/assets/svg/map-arrow-right.svg"
+            alt="open arrow right"
+          /></div
       ></label>
       <div class="all-projects">
-        <div id="our-projects">
+        <div class="our-projects">
           <label for="Our-projects-checkbox"
-            ><div id="slide-element">
-              <!--id="arrow-left"-->
-              <svg
-                id="arrow-left"
-                width="14"
-                height="24"
-                viewBox="0 0 14 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.8333 2.57406L2.11108 12.0648L11.8333 21.5555"
-                  stroke="#191919"
-                  stroke-width="3.33333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg></div
+            ><div class="slide-element">
+              <img
+                class="arrow-left"
+                src="/src/assets/svg/map-arrow-left.svg"
+                alt="close arrow left"
+              /></div
           ></label>
-          <div id="our-projects-scroll">
+          <div class="our-projects-scroll">
             <h2>Our <span>Projects</span></h2>
 
             <div class="our-projects-card">
@@ -448,7 +256,7 @@
         </div>
       </div>
     </div>
-    <div id="newest-projects">
+    <div class="newest-projects">
       <h2>Newest Projects</h2>
       <div class="newest-projects-grid">
         <div class="newest-projects-grid-card grid-card-1">
@@ -464,20 +272,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -494,20 +292,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -524,20 +312,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -554,20 +332,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -584,20 +352,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -614,20 +372,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -644,20 +392,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -674,20 +412,10 @@
             </div>
             <div class="newest-projects-grid-card-hover-button">
               Learn More
-              <svg
-                width="1.5rem"
-                height="1rem"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.8079 10.7305L17.1174 19.959H17.1467L16.6956 20.3906C16.4506 20.6243 16.1197 20.7537 15.7776 20.7549C15.4355 20.7559 15.1043 20.6285 14.8577 20.3965C14.6106 20.164 14.4683 19.8449 14.467 19.5088C14.4658 19.1726 14.6063 18.8524 14.8518 18.6182L21.9905 11.7988L2.42017 11.7988C2.07828 11.7987 1.74785 11.6702 1.5022 11.4375C1.25612 11.2043 1.11548 10.8848 1.11548 10.5488C1.1156 10.2131 1.25625 9.89426 1.5022 9.66113C1.74785 9.42841 2.07828 9.29893 2.42017 9.29883L21.9895 9.29883L14.8547 2.4834C14.7162 2.38102 14.5984 2.2541 14.512 2.10645C14.42 1.94934 14.3648 1.7743 14.3499 1.59375C14.335 1.41317 14.3617 1.23195 14.427 1.0625C14.4923 0.893069 14.5948 0.740106 14.7268 0.613281C14.8587 0.486556 15.0163 0.38791 15.1897 0.325195C15.3632 0.262492 15.549 0.236884 15.7336 0.248047C15.9183 0.259213 16.0988 0.307326 16.2629 0.390625C16.4189 0.469809 16.5567 0.579238 16.6682 0.711914L26.8079 10.3682L26.9973 10.5488L26.8079 10.7305Z"
-                  fill="#191919"
-                  stroke="black"
-                  stroke-width="0.5"
-                />
-              </svg>
+              <img
+                src="/src/assets/svg/learn-more arrow.svg"
+                alt="Learn more"
+              />
             </div>
           </div>
         </div>
@@ -711,122 +439,22 @@
       <div class="footer-middle-part">
         <div class="footer-middle-part-top">
           <div class="footer-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              class="bi bi-instagram"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-              />
-            </svg>
+            <img src="/src/assets/svg/instagram-icon.svg" alt="Instagram" />
           </div>
           <div class="footer-icon">
-            <svg
-              viewBox="0 0 59 59"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <rect
-                width="58.11"
-                height="58.11"
-                transform="translate(0.109985)"
-                fill="url(#pattern0_493_2306)"
-              />
-              <defs>
-                <pattern
-                  id="pattern0_493_2306"
-                  patternContentUnits="objectBoundingBox"
-                  width="1"
-                  height="1"
-                >
-                  <use
-                    xlink:href="#image0_493_2306"
-                    transform="scale(0.025641)"
-                  />
-                </pattern>
-                <image
-                  id="image0_493_2306"
-                  width="39"
-                  height="39"
-                  preserveAspectRatio="none"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAA7JJREFUWEftmMFrFFccx7+/tzZqA+mxIh4MiK0uPbQFD148efImbi5FVJC04MyEhEKOfYcecumGzBtRclDxIiR68y+YnHKoIjFt0fYkHoQsLW2JspN5v+Y3nSdjImZmZ9WUZmFhNztvfp/9/n7v+30bwjZ+0DZmw/8Kjlqtlpqfn0/70ZG+KddqtRpFKK31LgeotRZYrgrcLzi5D7fb7UMDAwOj1toTRLSfiIiZBWoVQIeZzwZB8BuQjdOWsLXhtNZKa21nZmYuKqWuENFLxTYqlSTJl+Pj4/fcmq2UrAXnWhmG4Wml1B0pZq3tKqUazOyEcy9SZj4WBMGDdwInMGEY7iain4lomJnXcuWkZRZAo6iOtfaLIAjuv3W4ubm5xsjISBqG4Sml1N0imIxZLttzAH8QkUDaNE1Pjo2NPXxncMYYvT7c3wFYE6WIKFOMmaM0Tb9XSsl7dLtdXlxc/L2KzfQ8c2IVWus1Y8wVAN/kcAqAPDurq6vDk5OTf2019G/6vDZcGIbXlVLnASTMLMopZn68tLTUnJ2dTXLbcAxb2kcRtjJcwVxFuRfGmBtEdM7B5co9ZubPFhYW1prNZlZjeXmZq7RU1lSG29iGKIquAvg6h1My/Mz8i+/7R+q0tDLc1NTUR4ODg2estQ2llMzWn0R0CcBxAOJjskmlrc/Wk0E2SbYZpN1Kqb/jOL5VRb1SyrmtH4bhUSJaJnp1GTNbgcqVkrl65YJ/EwxPfd8/UEXNUnAuC6MoOgzgRwB7mVnCXNZnm6CQlS43xVrkIdftAXDb87xW2Vwt3VanXA53H8CHhTYKTBbwuaIZXB74UiMhot0AfvA879uNp5faVuLgjDGfEtFPOYykQNEi3JtNbc0v8jzPu+z8sUx7K7XVGDMM4C4RSZuszBqAfQCG5HSUFxQVuwCe5Ccm+fuede/7KgiChbLRVbqthW9J7XZbwJAkyS5JgCiKbgI4a62V0Bcrkfn7dWVl5XOXGkNDQzwxMfGizBmulgkXQaWYMeYaEV1gZpktAROfe+T7/idlWld75l53g9HR0Q8knqIoug7gZXzlCfGo0+k0JXur7M6NdcrO3CY+N9hFOGfOolwcx0erGO7rBNiB63X2dpTbUa6owH9itzoTltDIPS4z4W1lJcX42lZwzCwJIWmQZav8wInj+Mh7M2E3f9PT0weJ6GMiyg6XzCyAz+XHc6+71K3r2efqFi6zvh9wpLXedB/5z1MZgLdyKqlbuMz6fihXpk5P1/wDuVNyRgHL/20AAAAASUVORK5CYII="
-                />
-              </defs>
-            </svg>
+            <img src="/src/assets/svg/facebook-icon.svg" alt="Facebook" />
           </div>
           <div class="footer-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              class="bi bi-twitter-x"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
-              />
-            </svg>
+            <img src="/src/assets/svg/x-icon.svg" alt="X/Twitter" />
           </div>
           <div class="footer-icon">
-            <svg
-              viewBox="0 0 59 59"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <rect
-                width="58.11"
-                height="58.11"
-                transform="translate(0.219971)"
-                fill="url(#pattern0_493_2308)"
-              />
-              <defs>
-                <pattern
-                  id="pattern0_493_2308"
-                  patternContentUnits="objectBoundingBox"
-                  width="1"
-                  height="1"
-                >
-                  <use
-                    xlink:href="#image0_493_2308"
-                    transform="scale(0.025641)"
-                  />
-                </pattern>
-                <image
-                  id="image0_493_2308"
-                  width="39"
-                  height="39"
-                  preserveAspectRatio="none"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAABKVJREFUWEftV01MXFUUPue+gWrASUPZuDIubBComLpzYWLiX/yp0QgLt0b8m3lvmAxNMC6eC0lIE+i8O4ohujZlXKjdNLqRjWHThZaCURNjTZpUkTbIYoY37xw5r/eSR5lhhDCUBW8zf2fO/e53vvOdexEO8YOHGBscgdtrdXZkbnBw0CmXywQAnHy/18V2+7+dwMlvbBJuvvd9X/m+L4Bb/jQCF4MJguBVAMgrpY4z849RFI3lcrlrBwVwGzhTvqhYLA4ppS4g3g5hjkn8fW1t7bGxsbGbAHEzWWZbwmLDsmqtLyPiaSKqImIKEUMAuAcARjKZzHm7iZagSmhpW/6JiYn7Ojo6rgDAA8xMeJu+GjO3MfM513XP+r6f8n2/dqDgrJ601t8i4tMAUAEAh4gYEduZ+XXXdb+YnZ11hoaGorsCbmpq6tFUKjWHiGmjN8HxVTabfaWVgJK562ouwd6DAPAmIt5PRD+srKx8bmzENkMjzW42iuTq7e3djFtcXOT/a0UtG1/NGqbZ78JgQ3CTk5NdjuOckKAoithxHCSiaGlp6c+ZmRnpXBgfHz/R2dl5HBFjU67VahITzs/PXy+Xy6JH3NDu44jYx8zHiOgWACx6nndZ4pv5ZUOf01qfA4ACIq4xsyMdK9qr1WqnR0ZGliS51jpAxOxG3BoAKGa+FxF/zmQyvUEQPIOIUwDQa73S6omZrxDRWc/zLu0EcCdw5wHAAwCxEmUTE1Gf67qL8rlUKn0KAG8Zu7ExPzHzNCJOm0YSBmMNmg3KSxxLRIOu637ZqMQNwQVBMKWUygFAaJkzCfsT4D4BgHcSMcLeLUTsEE9ExNiGmMWFUF7jPSKi+KN45s1qtXqyUCgs15s4TcExc80kjr04yZzWehoA3jYxMkVk9S2dnACUPEQIRtFtGxF5rusG9Xxz38AppRwDTMoopr0KABcA4JpSagAAXjNAYxrthgDgYiaTOVNPe/sJLpXQ3nIYhk/YxhGagiBwlVJFaX5pHpGcbAIArs7NzQ2Y7t7i7/sJTjQlC6eI6APP8z4KguDYwsICifX4vt/e3d39i53XRnui0ethGJ7K5/Mrd+pu38CJLk1XCitPZrPZ722pEhPnOwB4SixR2JOuJaLlarXaNzo6+lfLwFnNSWmJaMDzvAULyoq9VCp9AwAvid6YWcnDzH9XKpX+loMTyxBWwjB8OJ/P/2aZsOC01hcR8UUBZ5k7EHBSVtuFjcAlmTtQcImyNmTuroE71MwdgbMnBK31JCKOMPO6na3minjKDn6t9ceI+K6NMcemMAzDvgbd+jUinpF4MyVSGweHG5VK5ZHdWklJKfVecp7IbAzDsD+fz1+V74vF4meO47xx550iiqKTnuf9WsdKLiHis8l4IvqXiB7K5XI3mpqwNc4gCN5XSmXlCGR2GU+TMAyfN6zIvPwQEYcBII4xjl9bX19/rlAo/GEXsznN+e9lc6yS4d++wbxMhhcymcw/TcHZXcm9NJ1Ot62urm651fu+X7WHx+Hh4baenp7UTjFJlmS+ptNpJxnf1dXFrutKzm1Pyy449Rbb7XdH4HbLmI0/Ym6vzP0HlO2DZCl9YpgAAAAASUVORK5CYII="
-                />
-              </defs>
-            </svg>
+            <img src="/src/assets/svg/linkedin-icon.svg" alt="LinkedIn" />
           </div>
           <div class="footer-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              class="bi bi-youtube"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-              />
-            </svg>
+            <img src="/src/assets/svg/youtube-icon.svg" alt="YouTube" />
           </div>
           <div class="footer-icon">
-            <svg
-              viewBox="0 0 49 50"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M41.5233 7.9209C39.3077 5.68289 36.6686 3.90843 33.7601 2.70103C30.8515 1.49362 27.7316 0.877433 24.5824 0.888404C11.3874 0.888404 0.633275 11.6426 0.633275 24.8376C0.633275 29.0667 1.74494 33.1751 3.82328 36.8001L0.439941 49.2217L13.1274 45.8867C16.6316 47.7959 20.5708 48.8109 24.5824 48.8109C37.7774 48.8109 48.5316 38.0567 48.5316 24.8617C48.5316 18.4576 46.0424 12.4401 41.5233 7.9209ZM24.5824 44.7509C21.0058 44.7509 17.5016 43.7842 14.4324 41.9717L13.7074 41.5367L6.16744 43.5184L8.17327 36.1717L7.68994 35.4226C5.70283 32.2494 4.6477 28.5816 4.64494 24.8376C4.64494 13.8659 13.5866 4.92424 24.5583 4.92424C29.8749 4.92424 34.8774 7.00257 38.6233 10.7726C40.478 12.6188 41.9479 14.8148 42.9476 17.2333C43.9474 19.6519 44.4572 22.2448 44.4474 24.8617C44.4958 35.8334 35.5541 44.7509 24.5824 44.7509ZM35.5058 29.8642C34.9016 29.5742 31.9533 28.1242 31.4216 27.9067C30.8658 27.7134 30.4791 27.6167 30.0683 28.1967C29.6574 28.8009 28.5216 30.1542 28.1833 30.5409C27.8449 30.9517 27.4824 31.0001 26.8783 30.6859C26.2741 30.3959 24.3408 29.7434 22.0691 27.7134C20.2808 26.1184 19.0966 24.1609 18.7341 23.5567C18.3958 22.9526 18.6858 22.6384 18.9999 22.3242C19.2658 22.0584 19.6041 21.6234 19.8941 21.2851C20.1841 20.9467 20.3049 20.6809 20.4983 20.2942C20.6916 19.8834 20.5949 19.5451 20.4499 19.2551C20.3049 18.9651 19.0966 16.0167 18.6133 14.8084C18.1299 13.6484 17.6224 13.7934 17.2599 13.7692H16.0999C15.6891 13.7692 15.0608 13.9142 14.5049 14.5184C13.9733 15.1226 12.4266 16.5726 12.4266 19.5209C12.4266 22.4692 14.5774 25.3209 14.8674 25.7076C15.1574 26.1184 19.0966 32.1601 25.0899 34.7459C26.5158 35.3742 27.6274 35.7367 28.4974 36.0026C29.9233 36.4617 31.2283 36.3892 32.2674 36.2442C33.4274 36.0751 35.8199 34.7942 36.3033 33.3926C36.8108 31.9909 36.8108 30.8067 36.6416 30.5409C36.4724 30.2751 36.1099 30.1542 35.5058 29.8642Z"
-                fill="#949494"
-              />
-            </svg>
+            <img src="/src/assets/svg/watsup-icon.svg" alt="WatsUp" />
           </div>
         </div>
         <div class="footer-middle-part-bottom">
@@ -834,7 +462,7 @@
         </div>
       </div>
       <div class="footer-right-part">
-        <img id="logo" src="/src/assets/img/logo.png" alt="logo" />
+        <img class="logo" src="/src/assets/svg/logo.svg" alt="logo" />
       </div>
     </div>
   </footer>

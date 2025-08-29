@@ -39,7 +39,7 @@ header {
     h1 {
       font-size: clamp(3rem, calc(5vw - 1rem), 5.5rem);
       font-weight: 750;
-      margin-bottom: 1rem;
+      margin-bottom: clamp(1.5rem, calc(5vh - 1rem), 3.5rem);
     }
     p {
       color: $whiteCOlor;

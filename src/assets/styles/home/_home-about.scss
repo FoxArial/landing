@@ -1,9 +1,7 @@
 @import "../mixin";
-#about {
+.about {
   height: fit-content;
   min-height: 50vh;
-  max-height: 150dvh;
-  max-height: 150vh;
   @include marginsSide();
   padding: 2rem 0;
   display: flex;
@@ -49,7 +47,7 @@
   flex-flow: row wrap;
   padding-top: 2.5rem;
 }
-#about-img {
+.about-img {
   border-radius: 0.4rem;
   overflow: hidden;
   min-width: auto;
