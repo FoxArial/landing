@@ -1,31 +1,29 @@
 @import "../mixin";
-#about-us-text {
+.about-us-text {
   min-height: 100vh;
   min-height: 100dvh;
 }
 
-.bottom-about {
-  .number {
-    flex: 1 1 cal(50%-20);
-    min-width: 14rem;
-    span {
-      font-weight: 350;
-    }
+.number {
+  flex: 1 1 cal(50%-20);
+  min-width: 14rem;
+  span {
+    font-weight: 350;
   }
-  .number-unit {
-    font-size: clamp(1.2rem, calc(3vw - 1.2rem), 2.5rem);
-    color: $brownColor;
-    margin-bottom: 1rem;
-  }
-  .number-info {
-    font-size: clamp(1rem, calc(3vw - 1.2rem), 2rem);
-  }
-  .numbers-part {
-    height: fit-content;
-    max-width: 50%;
-    display: flex;
-    gap: 3rem;
-    flex-flow: row wrap;
-    padding-top: 2.5rem;
-  }
+}
+.number-unit {
+  font-size: clamp(1.2rem, calc(3vw - 1.2rem), 2.5rem);
+  color: $brownColor;
+  margin-bottom: 1rem;
+}
+.number-info {
+  font-size: clamp(1rem, calc(3vw - 1.2rem), 2rem);
+}
+.numbers-part {
+  height: fit-content;
+  max-width: 50%;
+  display: flex;
+  gap: 3rem;
+  flex-flow: row wrap;
+  padding-top: 2.5rem;
 }

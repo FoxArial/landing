@@ -3,7 +3,7 @@ header {
   min-height: 100vh;
   min-height: 100dvh;
   background-size: cover;
-  background-position: 0 -12px;
+  background-position: top center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,33 +521,33 @@ footer {
           align-items: center;
 }
 
-#about-us-text {
+.about-us-text {
   min-height: 100vh;
   min-height: 100dvh;
 }
 
-.bottom-about .number {
+.number {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 cal(30%);
           flex: 1 1 cal(30%);
   min-width: 14rem;
 }
 
-.bottom-about .number span {
+.number span {
   font-weight: 350;
 }
 
-.bottom-about .number-unit {
+.number-unit {
   font-size: clamp(1.2rem, calc(3vw - 1.2rem), 2.5rem);
   color: #c4762b;
   margin-bottom: 1rem;
 }
 
-.bottom-about .number-info {
+.number-info {
   font-size: clamp(1rem, calc(3vw - 1.2rem), 2rem);
 }
 
-.bottom-about .numbers-part {
+.numbers-part {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -626,14 +626,5 @@ header .center-info p {
   color: #ffffff;
   line-height: normal;
   font-size: clamp(2rem, calc(4vw - 1rem), 4.5rem);
-}
-
-#call-back-element {
-  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
-  height: auto;
-  position: fixed;
-  right: 10px;
-  bottom: 5px;
-  z-index: 100;
 }
 /*# sourceMappingURL=style-about-us.css.map */

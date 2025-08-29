@@ -47,11 +47,3 @@ header {
     }
   }
 }
-#call-back-element {
-  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
-  height: auto;
-  position: fixed;
-  right: 10px;
-  bottom: 5px;
-  z-index: 100;
-}
