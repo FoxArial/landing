@@ -1,5 +1,5 @@
 @import "../mixin";
-#culture-elements {
+.culture-elements {
   min-height: 50vh;
   background-color: #ededed;
   padding-top: 1px;
@@ -31,7 +31,7 @@
   justify-content: center;
   width: fit-content;
   height: 100%;
-  svg {
+  img {
     width: clamp(3rem, calc(6vw - 1rem), 8rem);
     height: auto;
   }

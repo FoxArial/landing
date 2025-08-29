@@ -48,18 +48,9 @@ header {
     }
   }
 }
-#newest-projects {
+.newest-projects {
   margin: 0;
   h2 {
     margin: #{"min(5rem, 5%)"};
   }
-}
-
-#call-back-element {
-  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
-  height: auto;
-  position: fixed;
-  right: 10px;
-  bottom: 5px;
-  z-index: 100;
 }

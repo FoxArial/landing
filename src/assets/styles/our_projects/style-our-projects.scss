@@ -13,14 +13,9 @@ html {
 }
 header {
   min-height: fit-content;
-  background-color: $whiteCOlor;
   gap: 1rem;
-  .nav {
-    width: auto;
-    #logo {
-      height: 94px;
-      width: auto;
-    }
+  .logo {
+    filter: invert(100%);
   }
   .nav-element {
     ul {
@@ -44,13 +39,9 @@ header {
       }
     }
   }
-  #menu {
-    .menu-element {
-      color: $whiteCOlor;
+  .ham-menu {
+    span {
       background-color: $grayColor;
-      &:hover {
-        background-color: $grayHoverColor;
-      }
     }
   }
   .center-text {
@@ -73,12 +64,4 @@ header {
       font-size: clamp(1.1rem, calc(3vw - 1.7rem), 2.5rem);
     }
   }
-}
-#call-back-element {
-  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
-  height: auto;
-  position: fixed;
-  right: 10px;
-  bottom: 5px;
-  z-index: 100;
 }

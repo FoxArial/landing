@@ -148,14 +148,14 @@ header {
   background-color: #ffffff;
 }
 
-.nav-element ul li:last-child {
+.nav-element .AR-button {
   height: 50%;
   padding: 10px 30px;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.3);
 }
 
-.nav-element ul li:last-child:hover {
+.nav-element .AR-button:hover {
   -webkit-animation: changeColorButton 0.5s ease-in-out forwards;
           animation: changeColorButton 0.5s ease-in-out forwards;
 }
@@ -170,13 +170,12 @@ header {
 }
 
 .nav-element .menu:hover .ham-menu span:nth-of-type(2) {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  -webkit-transform: translateX(45%);
+          transform: translateX(45%);
 }
 
-.nav-element .ham-menu {
+.ham-menu {
   width: 2rem;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +186,14 @@ header {
   cursor: pointer;
 }
 
-.nav-element .ham-menu span {
+.ham-menu > :nth-child(2) {
+  margin: 0.5rem 0;
+  width: 70%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.ham-menu span {
   display: block;
   height: 0.25rem;
   width: 100%;
@@ -196,13 +202,6 @@ header {
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-}
-
-.nav-element .ham-menu span:nth-of-type(2) {
-  margin: 0.5rem 0;
-  width: 70%;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 @-webkit-keyframes underLine {
@@ -286,6 +285,7 @@ header {
   text-transform: none;
   font-size: 0.9rem;
   width: 100%;
+  color: #ffffff;
   background-color: #191919;
 }
 
@@ -521,7 +521,7 @@ footer {
           align-items: center;
 }
 
-#photo-grid {
+.photo-grid {
   min-height: 100vh;
   min-height: 100dvh;
   margin: clamp(2rem, calc(4vw - 1rem), 5rem) auto 1rem auto;
@@ -538,6 +538,70 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   gap: clamp(1rem, calc(2vh - 1rem), 2rem);
+}
+
+.photo-grid a {
+  text-decoration: none;
+}
+
+.photo-grid a:hover, .photo-grid a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.photo-grid > :first-child,
+.photo-grid > :nth-child(5) {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa.png");
+  background-size: cover;
+}
+
+.photo-grid > :first-child::after,
+.photo-grid > :nth-child(5)::after {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa.png");
+  background-size: cover;
+  background-position: left center;
+  background-size: 105%;
+}
+
+.photo-grid > :nth-child(2),
+.photo-grid > :nth-child(3),
+.photo-grid > :last-child {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/tower1.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/tower1.png");
+  background-size: cover;
+}
+
+.photo-grid > :nth-child(2)::after,
+.photo-grid > :nth-child(3)::after,
+.photo-grid > :last-child::after {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/tower1.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/tower1.png");
+  background-size: cover;
+  background-position: 25% center;
+}
+
+.photo-grid > :nth-child(4) {
+  grid-row: span 2;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Aimaather.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Aimaather.png");
+  background-size: cover;
+  background-position: 31% 100%;
+}
+
+.photo-grid > :nth-child(6) {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia2.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia2.png");
+  background-size: cover;
+}
+
+.photo-grid > :nth-child(6)::after {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia2.png");
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia2.png");
+  background-size: cover;
+  background-position: 40% center;
+  background-size: 150%;
 }
 
 .photo-grid-element {
@@ -580,48 +644,6 @@ footer {
   background-size: 115%;
 }
 
-.element-1 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa.png");
-}
-
-.element-1::after {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tharwa.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tharwa.png");
-  background-position: left center;
-  background-size: 105%;
-}
-
-.element-2 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/tower1.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/tower1.png");
-}
-
-.element-2::after {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/tower1.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/tower1.png");
-  background-position: 25% center;
-}
-
-.element-3 {
-  grid-row: span 2;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Aimaather.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Aimaather.png");
-  background-position: 31% 100%;
-}
-
-.element-4 {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia2.png");
-}
-
-.element-4::after {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.7))), url("/src/assets/img/Tahlia2.png");
-  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url("/src/assets/img/Tahlia2.png");
-  background-position: 40% center;
-  background-size: 150%;
-}
-
 .photo-grid-element:hover::after {
   visibility: visible;
   opacity: 1;
@@ -643,17 +665,12 @@ header {
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
-  background-color: #ffffff;
   gap: 1rem;
 }
 
-header .nav {
-  width: auto;
-}
-
-header .nav #logo {
-  height: 94px;
-  width: auto;
+header .logo {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 header .nav-element ul {
@@ -680,13 +697,8 @@ header .nav-element li:last-child:hover {
   color: #ffffff;
 }
 
-header #menu .menu-element {
-  color: #ffffff;
+header .ham-menu span {
   background-color: #191919;
-}
-
-header #menu .menu-element:hover {
-  background-color: #363636;
 }
 
 header .center-text {
@@ -713,14 +725,5 @@ header .center-text p {
   color: #5b5f61;
   line-height: clamp(2rem, calc(4vw - 1.5rem), 3.5rem);
   font-size: clamp(1.1rem, calc(3vw - 1.7rem), 2.5rem);
-}
-
-#call-back-element {
-  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
-  height: auto;
-  position: fixed;
-  right: 10px;
-  bottom: 5px;
-  z-index: 100;
 }
 /*# sourceMappingURL=style-our-projects.css.map */

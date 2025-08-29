@@ -1,5 +1,5 @@
 @import "../mixin";
-#photo-grid {
+.photo-grid {
   min-height: 100vh;
   min-height: 100dvh;
   margin: clamp(2rem, calc(4vw - 1rem), 5rem) auto 1rem auto;
@@ -9,6 +9,45 @@
   grid-template-columns: repeat(2, minmax(40vw, 1fr));
   justify-content: center;
   gap: clamp(1rem, calc(2vh - 1rem), 2rem);
+  a {
+    text-decoration: none;
+    &:hover,
+    &:visited {
+      color: $whiteCOlor;
+      text-decoration: none;
+    }
+  }
+  & > :first-child,
+  & > :nth-child(5) {
+    @include bg-image("/src/assets/img/Tharwa.png");
+    &::after {
+      @include bg-image("/src/assets/img/Tharwa.png");
+      background-position: left center;
+      background-size: 105%;
+    }
+  }
+  & > :nth-child(2),
+  & > :nth-child(3),
+  & > :last-child {
+    @include bg-image("/src/assets/img/tower1.png");
+    &::after {
+      @include bg-image("/src/assets/img/tower1.png");
+      background-position: 25% center;
+    }
+  }
+  & > :nth-child(4) {
+    grid-row: span 2;
+    @include bg-image("/src/assets/img/Aimaather.png");
+    background-position: 31% 100%;
+  }
+  & > :nth-child(6) {
+    @include bg-image("/src/assets/img/Tahlia2.png");
+    &::after {
+      @include bg-image("/src/assets/img/Tahlia2.png");
+      background-position: 40% center;
+      background-size: 150%;
+    }
+  }
 }
 .photo-grid-element {
   aspect-ratio: 1/0.79;
@@ -45,69 +84,6 @@
   z-index: -1;
   transition: all 0.5s ease;
   background-size: 115%;
-}
-.element-1 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tharwa.png");
-}
-.element-1::after {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tharwa.png");
-  background-position: left center;
-  background-size: 105%;
-}
-.element-2 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/tower1.png");
-}
-.element-2::after {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/tower1.png");
-  background-position: 25% center;
-}
-.element-3 {
-  grid-row: span 2;
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Aimaather.png");
-  background-position: 31% 100%;
-}
-.element-4 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tahlia2.png");
-}
-.element-4::after {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tahlia2.png");
-  background-position: 40% center;
-  background-size: 150%;
 }
 .photo-grid-element:hover::after {
   visibility: visible;

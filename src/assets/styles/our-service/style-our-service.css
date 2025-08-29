@@ -148,14 +148,14 @@ header {
   background-color: #ffffff;
 }
 
-.nav-element ul li:last-child {
+.nav-element .AR-button {
   height: 50%;
   padding: 10px 30px;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.3);
 }
 
-.nav-element ul li:last-child:hover {
+.nav-element .AR-button:hover {
   -webkit-animation: changeColorButton 0.5s ease-in-out forwards;
           animation: changeColorButton 0.5s ease-in-out forwards;
 }
@@ -170,13 +170,12 @@ header {
 }
 
 .nav-element .menu:hover .ham-menu span:nth-of-type(2) {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  -webkit-transform: translateX(45%);
+          transform: translateX(45%);
 }
 
-.nav-element .ham-menu {
+.ham-menu {
   width: 2rem;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +186,14 @@ header {
   cursor: pointer;
 }
 
-.nav-element .ham-menu span {
+.ham-menu > :nth-child(2) {
+  margin: 0.5rem 0;
+  width: 70%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.ham-menu span {
   display: block;
   height: 0.25rem;
   width: 100%;
@@ -196,13 +202,6 @@ header {
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-}
-
-.nav-element .ham-menu span:nth-of-type(2) {
-  margin: 0.5rem 0;
-  width: 70%;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 @-webkit-keyframes underLine {
@@ -286,6 +285,7 @@ header {
   text-transform: none;
   font-size: 0.9rem;
   width: 100%;
+  color: #ffffff;
   background-color: #191919;
 }
 
@@ -679,7 +679,7 @@ footer {
   background: #eeedec;
 }
 
-#we-elements {
+.we-elements {
   min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,7 +715,7 @@ footer {
   color: #5b5f61;
 }
 
-#culture-elements {
+.culture-elements {
   min-height: 50vh;
   background-color: #ededed;
   padding-top: 1px;
@@ -777,7 +777,7 @@ footer {
   height: 100%;
 }
 
-.right-part-element svg {
+.right-part-element img {
   width: clamp(3rem, calc(6vw - 1rem), 8rem);
   height: auto;
 }
@@ -851,20 +851,11 @@ header .center-info p {
   font-size: clamp(2rem, calc(4vw - 1rem), 4.5rem);
 }
 
-#newest-projects {
+.newest-projects {
   margin: 0;
 }
 
-#newest-projects h2 {
+.newest-projects h2 {
   margin: min(5rem, 5%);
-}
-
-#call-back-element {
-  width: clamp(3rem, calc(4vw - 1rem), 4.5rem);
-  height: auto;
-  position: fixed;
-  right: 10px;
-  bottom: 5px;
-  z-index: 100;
 }
 /*# sourceMappingURL=style-our-service.css.map */

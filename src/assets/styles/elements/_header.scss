@@ -88,15 +88,15 @@ header {
           background-color: $whiteCOlor;
         }
       }
-      &:last-child {
-        height: 50%;
-        padding: 10px 30px;
-        border-radius: 2px;
-        background: rgba(255, 255, 255, 0.3);
-      }
-      &:last-child:hover {
-        animation: changeColorButton 0.5s ease-in-out forwards;
-      }
+    }
+  }
+  .AR-button {
+    height: 50%;
+    padding: 10px 30px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    &:hover {
+      animation: changeColorButton 0.5s ease-in-out forwards;
     }
   }
   .menu {
@@ -106,49 +106,48 @@ header {
       opacity: 1;
     }
     &:hover .ham-menu span:nth-of-type(2) {
-      transform: translateX(50%);
+      transform: translateX(45%);
     }
   }
-  .ham-menu {
-    width: 2rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    span {
-      display: block;
-      height: 0.25rem;
-      width: 100%;
-      background-color: white;
-      transition: transform 0.25s ease-in-out;
-      &:nth-of-type(2) {
-        margin: 0.5rem 0;
-        width: 70%;
-        transform: translateX(0);
-      }
-    }
+}
+.ham-menu {
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  & > :nth-child(2) {
+    margin: 0.5rem 0;
+    width: 70%;
+    transform: translateX(0);
   }
-  @keyframes underLine {
-    0% {
-      width: 0%;
-    }
-    50% {
-      width: 100%;
-    }
-    70% {
-      width: 80%;
-    }
-    100% {
-      width: 100%;
-    }
+  span {
+    display: block;
+    height: 0.25rem;
+    width: 100%;
+    background-color: white;
+    transition: transform 0.25s ease-in-out;
   }
-  @keyframes changeColorButton {
-    10% {
-      background: rgba(255, 255, 255, 0.2);
-    }
-    100% {
-      background: $grayColor;
-    }
+}
+@keyframes underLine {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  70% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes changeColorButton {
+  10% {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background: $grayColor;
   }
 }
 .menu-visibility {
@@ -173,6 +172,7 @@ header {
     text-transform: none;
     font-size: 0.9rem;
     width: 100%;
+    color: $whiteCOlor;
     background-color: $grayColor;
     &:hover {
       background-color: $grayHoverColor;
@@ -211,16 +211,16 @@ header {
     display: block;
     animation: arrow 1.5s ease-in-out infinite;
   }
-  @keyframes arrow {
-    0% {
-      transform: translate(0px, 0px);
-    }
-    50% {
-      transform: translate(0px, 10px);
-    }
-    100% {
-      transform: translate(0px, 0px);
-    }
+}
+@keyframes arrow {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 @media (max-width: 720px) {
