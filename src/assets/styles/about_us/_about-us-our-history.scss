@@ -1,0 +1,98 @@
+@import "../mixin";
+.our-history {
+  @include paddingSide();
+  padding-top: 0;
+  padding-bottom: #{"min(3rem, 5%)"};
+  display: flex;
+  flex-direction: column;
+  background-color: $backgroundColorSecondary;
+  user-select: none;
+  h2 {
+    margin: #{"min(3rem, 5%)"};
+    margin-left: 0px;
+    color: $whiteCOlor;
+  }
+}
+.our-history-grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 24%));
+  gap: clamp(0.8rem, calc(1.5vw - 1rem), 2rem);
+}
+.our-history-card {
+  padding: clamp(1rem, calc(3vw - 1rem), 8rem);
+  color: $whiteCOlor;
+  aspect-ratio: 1/1;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 0.5rem;
+    color: $whiteCOlor;
+    font-weight: 350;
+    transition: all 0.2s ease;
+    font-size: clamp(1.2rem, calc(3vw - 1rem), 2rem);
+  }
+  p {
+    opacity: 0;
+    visibility: hidden;
+    font-weight: 350;
+    font-size: clamp(1rem, calc(2.8vw - 1.8rem), 2rem);
+    line-height: clamp(2rem, calc(3.5vw - 1.5rem), 3.5rem);
+    transition: all 0.2s ease;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    color: $whiteCOlor;
+    font-weight: 750;
+    font-size: clamp(1rem, calc(8vw - 1rem), 3rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+  &:nth-of-type(1),
+  &:nth-of-type(5) {
+    @include bg-image-full-shadow("/src/assets/img/Aimaather.png");
+    &::after {
+      content: "2020";
+    }
+  }
+  &:nth-of-type(2),
+  &:nth-of-type(6) {
+    @include bg-image-full-shadow("/src/assets/img/Tharwa2.png");
+    &::after {
+      content: "2016";
+    }
+  }
+  &:nth-of-type(3),
+  &:nth-of-type(4),
+  &:nth-of-type(7),
+  &:nth-of-type(8) {
+    @include bg-image-full-shadow("/src/assets/img/Citylife.png");
+    &::after {
+      content: "2011";
+    }
+  }
+  &:hover {
+    background: #bdcdc2;
+    h3 {
+      opacity: 1;
+      visibility: visible;
+    }
+    p {
+      opacity: 1;
+      visibility: visible;
+    }
+    &::after {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

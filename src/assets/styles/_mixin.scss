@@ -17,3 +17,7 @@
     url($path);
   background-size: cover;
 }
+@mixin bg-image-full-shadow($path) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url($path);
+  background-size: cover;
+}

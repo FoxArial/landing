@@ -533,6 +533,10 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .left-part {
@@ -639,10 +643,15 @@ footer {
           flex-direction: column;
   padding: min(2rem, 5%) min(5rem, 5%) 0 min(5rem, 5%);
   padding-top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .directors-message h2 {
   margin: min(3rem, 5%);
+  margin-left: 0px;
 }
 
 .directors-message-card {
@@ -720,6 +729,143 @@ footer {
   .directors-message-text {
     width: 100%;
   }
+}
+
+.our-history {
+  padding: min(2rem, 5%) min(5rem, 5%) 0 min(5rem, 5%);
+  padding-top: 0;
+  padding-bottom: min(3rem, 5%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2c2b25;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.our-history h2 {
+  margin: min(3rem, 5%);
+  margin-left: 0px;
+  color: #ffffff;
+}
+
+.our-history-grid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 24%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 24%));
+  gap: clamp(0.8rem, calc(1.5vw - 1rem), 2rem);
+}
+
+.our-history-card {
+  padding: clamp(1rem, calc(3vw - 1rem), 8rem);
+  color: #ffffff;
+  aspect-ratio: 1/1;
+  background-position: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.our-history-card h3 {
+  opacity: 0;
+  visibility: hidden;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 350;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: clamp(1.2rem, calc(3vw - 1rem), 2rem);
+}
+
+.our-history-card p {
+  opacity: 0;
+  visibility: hidden;
+  font-weight: 350;
+  font-size: clamp(1rem, calc(2.8vw - 1.8rem), 2rem);
+  line-height: clamp(2rem, calc(3.5vw - 1.5rem), 3.5rem);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.our-history-card::after {
+  content: "";
+  position: absolute;
+  color: #ffffff;
+  font-weight: 750;
+  font-size: clamp(1rem, calc(8vw - 1rem), 3rem);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.our-history-card:nth-of-type(1), .our-history-card:nth-of-type(5) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("/src/assets/img/Aimaather.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("/src/assets/img/Aimaather.png");
+  background-size: cover;
+}
+
+.our-history-card:nth-of-type(1)::after, .our-history-card:nth-of-type(5)::after {
+  content: "2020";
+}
+
+.our-history-card:nth-of-type(2), .our-history-card:nth-of-type(6) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("/src/assets/img/Tharwa2.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("/src/assets/img/Tharwa2.png");
+  background-size: cover;
+}
+
+.our-history-card:nth-of-type(2)::after, .our-history-card:nth-of-type(6)::after {
+  content: "2016";
+}
+
+.our-history-card:nth-of-type(3), .our-history-card:nth-of-type(4), .our-history-card:nth-of-type(7), .our-history-card:nth-of-type(8) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("/src/assets/img/Citylife.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("/src/assets/img/Citylife.png");
+  background-size: cover;
+}
+
+.our-history-card:nth-of-type(3)::after, .our-history-card:nth-of-type(4)::after, .our-history-card:nth-of-type(7)::after, .our-history-card:nth-of-type(8)::after {
+  content: "2011";
+}
+
+.our-history-card:hover {
+  background: #bdcdc2;
+}
+
+.our-history-card:hover h3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.our-history-card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.our-history-card:hover::after {
+  opacity: 0;
+  visibility: hidden;
 }
 
 * {

@@ -26,7 +26,6 @@
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -34,69 +33,29 @@
     clamp(1rem, calc(3vw - 1rem), 2rem);
 }
 .grid-card-1 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/tower1.png");
+  @include bg-image("/src/assets/img/tower1.png");
 }
 .grid-card-2 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Aimaather.png");
+  @include bg-image("/src/assets/img/Aimaather.png");
   background-size: 150% 100%;
 }
 .grid-card-3 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tharwa.png");
+  @include bg-image("/src/assets/img/Tharwa.png");
 }
 .grid-card-4 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tahlia.png");
+  @include bg-image("/src/assets/img/Tahlia.png");
 }
 .grid-card-5 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tharwa2.png");
+  @include bg-image("/src/assets/img/Tharwa2.png");
 }
 .grid-card-6 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Tahlia2.png");
+  @include bg-image("/src/assets/img/Tahlia2.png");
 }
 .grid-card-7 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Citylife.png");
+  @include bg-image("/src/assets/img/Citylife.png");
 }
 .grid-card-8 {
-  background-image: linear-gradient(
-      -0deg,
-      rgba(255, 255, 255, 0) 55%,
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("/src/assets/img/Aimaather2.png");
+  @include bg-image("/src/assets/img/Aimaather2.png");
 }
 .card-info {
   color: $whiteCOlor;

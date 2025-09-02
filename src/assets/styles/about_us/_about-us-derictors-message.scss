@@ -6,8 +6,10 @@
   flex-direction: column;
   @include paddingSide();
   padding-top: 0;
+  user-select: none;
   h2 {
     margin: #{"min(3rem, 5%)"};
+    margin-left: 0px;
   }
 }
 .directors-message-card {
