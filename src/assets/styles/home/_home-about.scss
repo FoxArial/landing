@@ -1,7 +1,7 @@
 @import "../mixin";
 #about {
   height: fit-content;
-  min-height: 50vh;
+  min-height: 40vh;
   @include marginsSide();
   padding: 2rem 0;
   display: flex;
@@ -41,29 +41,43 @@
 }
 .numbers-part {
   height: fit-content;
-  max-width: 50%;
-  display: flex;
-  gap: 3rem;
-  flex-flow: row wrap;
-  padding-top: 2.5rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(14rem, 30rem));
+  row-gap: clamp(1.5rem, calc(8vh - 1rem), 3rem);
+  padding-top: clamp(1.5rem, calc(5vh - 1rem), 2.5rem);
 }
 .about-img {
-  border-radius: 0.4rem;
   overflow: hidden;
-  min-width: auto;
   max-width: 45%;
-  height: auto;
+  height: fit-content;
   img {
     object-fit: cover;
-    height: 100%;
     width: 100%;
     user-select: none;
     aspect-ratio: 1/1;
+    object-position: center;
+    border-radius: 0.4rem;
   }
 }
 .bottom-about {
-  margin-top: 2rem;
+  margin-top: clamp(1.5rem, calc(5vh - 1rem), 2rem);
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+}
+@media (max-width: 720px) {
+  .text-part {
+    width: 100%;
+  }
+  .bottom-about {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .about-img {
+    margin-top: clamp(1.5rem, calc(5vh - 1rem), 2rem);
+    max-width: 100%;
+  }
+  .numbers-part {
+    grid-template-columns: repeat(1, minmax(14rem, 30rem));
+  }
 }

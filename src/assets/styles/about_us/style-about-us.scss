@@ -2,6 +2,7 @@
 @import "../elements/header";
 @import "../elements/footer";
 @import "../about_us/about-us-text";
+@import "../about_us/about-us-derictors-message";
 @import "../mixin";
 * {
   margin: 0;
@@ -11,16 +12,16 @@
 }
 html {
   scroll-behavior: smooth;
-  h2 {
+  h2,
+  h3 {
     font-size: clamp(1.2rem, calc(3vw - 1rem), 2.5rem);
     font-weight: 750;
-
     color: $grayColor;
   }
   p {
     font-weight: 400;
-    font-size: clamp(1rem, calc(3vw - 2.1rem), 2rem);
-    line-height: clamp(1.5rem, calc(4vw - 1.8rem), 3.5rem);
+    line-height: clamp(2rem, calc(4vw - 1.5rem), 3.5rem);
+    font-size: clamp(1.2rem, calc(3vw - 1.25rem), 2.5rem);
   }
 }
 header {

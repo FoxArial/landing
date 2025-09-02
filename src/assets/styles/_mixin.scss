@@ -1,6 +1,9 @@
 @mixin marginsSide {
   margin: #{"min(2rem, 5%)"} #{"min(5rem, 5%)"} 0 #{"min(5rem, 5%)"};
 }
+@mixin paddingSide {
+  padding: #{"min(2rem, 5%)"} #{"min(5rem, 5%)"} 0 #{"min(5rem, 5%)"};
+}
 @mixin white-to-gray-gradient {
   background: linear-gradient(rgb(255, 255, 255), #d9d9d9);
   box-shadow: inset 0px -4px 5px rgba(0, 0, 0, 0.3);

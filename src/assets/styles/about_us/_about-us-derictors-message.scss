@@ -1,0 +1,63 @@
+@import "../mixin";
+.directors-message {
+  min-height: 50vh;
+  min-height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  @include paddingSide();
+  padding-top: 0;
+  h2 {
+    margin: #{"min(3rem, 5%)"};
+  }
+}
+.directors-message-card {
+  margin-bottom: clamp(2rem, calc(10vh - 1rem), 5rem);
+  display: flex;
+  gap: clamp(2rem, calc(5vw - 1rem), 10rem);
+}
+.directors-message-img {
+  width: 40%;
+  margin-bottom: clamp(1rem, calc(6vh - 1rem), 2rem);
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 9/6;
+    border-radius: 0.2rem;
+    filter: brightness(0.95);
+  }
+}
+.directors-message-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(2rem, calc(2vw - 1rem), 2.5rem);
+  p {
+    color: $gray2Color;
+    font-size: clamp(1.2rem, calc(3vw - 1.25rem), 2.85rem);
+  }
+  h3 {
+    margin-bottom: clamp(1.2rem, calc(2vw - 1rem), 2.5rem);
+    font-size: clamp(1.6rem, calc(3vw - 1rem), 3.2rem);
+  }
+}
+.directors-message-text-bottom {
+  align-self: center;
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(1.2rem, calc(2vw - 1rem), 2.5rem);
+  }
+}
+@media (max-width: 800px) {
+  .directors-message-card {
+    flex-direction: column;
+  }
+  .directors-message-img {
+    width: 100%;
+  }
+  .directors-message-text {
+    width: 100%;
+  }
+}

@@ -393,7 +393,7 @@ header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 50vh;
+  min-height: 40vh;
   margin: min(2rem, 5%) min(5rem, 5%) 0 min(5rem, 5%);
   padding: 2rem 0;
   display: -webkit-box;
@@ -453,48 +453,66 @@ header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  max-width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 3rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  padding-top: 2.5rem;
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(14rem, 30rem))[2];
+      grid-template-columns: repeat(2, minmax(14rem, 30rem));
+  row-gap: clamp(1.5rem, calc(8vh - 1rem), 3rem);
+  padding-top: clamp(1.5rem, calc(5vh - 1rem), 2.5rem);
 }
 
 .about-img {
-  border-radius: 0.4rem;
   overflow: hidden;
-  min-width: auto;
   max-width: 45%;
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .about-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
   width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   aspect-ratio: 1/1;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0.4rem;
 }
 
 .bottom-about {
-  margin-top: 2rem;
+  margin-top: clamp(1.5rem, calc(5vh - 1rem), 2rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .text-part {
+    width: 100%;
+  }
+  .bottom-about {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-img {
+    margin-top: clamp(1.5rem, calc(5vh - 1rem), 2rem);
+    max-width: 100%;
+  }
+  .numbers-part {
+    -ms-grid-columns: (minmax(14rem, 30rem))[1];
+        grid-template-columns: repeat(1, minmax(14rem, 30rem));
+  }
 }
 
 .map {
