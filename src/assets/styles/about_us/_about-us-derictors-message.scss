@@ -7,8 +7,12 @@
   @include paddingSide();
   padding-top: 0;
   user-select: none;
+  h2 {
+    margin-left: #{"min(1rem, 2%)"};
+  }
 }
 .directors-message-card {
+  margin-left: #{"min(1rem, 2%)"};
   margin-bottom: clamp(2rem, calc(10vh - 1rem), 5rem);
   display: flex;
   gap: clamp(2rem, calc(5vw - 1rem), 10rem);

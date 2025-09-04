@@ -10,6 +10,7 @@
   h2 {
     color: $whiteCOlor;
     text-transform: capitalize;
+    margin-left: #{"min(1rem, 2%)"};
   }
 }
 .our-history-grid {
@@ -34,14 +35,14 @@
     color: $whiteCOlor;
     font-weight: 350;
     transition: all 0.2s ease;
-    font-size: clamp(1.2rem, calc(3vw - 1rem), 2rem);
+    font-size: clamp(1.2rem, calc(3vw - 1.7rem), 2rem);
   }
   p {
     opacity: 0;
     visibility: hidden;
     font-weight: 350;
     font-size: clamp(1rem, calc(2.8vw - 1.8rem), 2rem);
-    line-height: clamp(2rem, calc(3.5vw - 1.5rem), 3.5rem);
+    line-height: clamp(1.5rem, calc(3.5vw - 1.5rem), 3.5rem);
     transition: all 0.2s ease;
     text-transform: capitalize;
   }
@@ -57,24 +58,24 @@
     opacity: 1;
     visibility: visible;
   }
-  &:nth-of-type(1),
-  &:nth-of-type(5) {
+  &:nth-child(1),
+  &:nth-child(5) {
     @include bg-image-full-shadow("/src/assets/img/Aimaather.png");
     &::after {
       content: "2020";
     }
   }
-  &:nth-of-type(2),
-  &:nth-of-type(6) {
+  &:nth-child(2),
+  &:nth-child(6) {
     @include bg-image-full-shadow("/src/assets/img/Tharwa2.png");
     &::after {
       content: "2016";
     }
   }
-  &:nth-of-type(3),
-  &:nth-of-type(4),
-  &:nth-of-type(7),
-  &:nth-of-type(8) {
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(7),
+  &:nth-child(8) {
     @include bg-image-full-shadow("/src/assets/img/Citylife.png");
     &::after {
       content: "2011";
