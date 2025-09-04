@@ -8,9 +8,8 @@
   background-color: $backgroundColorSecondary;
   user-select: none;
   h2 {
-    margin: #{"min(3rem, 5%)"};
-    margin-left: 0px;
     color: $whiteCOlor;
+    text-transform: capitalize;
   }
 }
 .our-history-grid {
@@ -44,6 +43,7 @@
     font-size: clamp(1rem, calc(2.8vw - 1.8rem), 2rem);
     line-height: clamp(2rem, calc(3.5vw - 1.5rem), 3.5rem);
     transition: all 0.2s ease;
+    text-transform: capitalize;
   }
   &::after {
     content: "";

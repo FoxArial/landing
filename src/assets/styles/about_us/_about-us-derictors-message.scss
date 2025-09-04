@@ -7,10 +7,6 @@
   @include paddingSide();
   padding-top: 0;
   user-select: none;
-  h2 {
-    margin: #{"min(3rem, 5%)"};
-    margin-left: 0px;
-  }
 }
 .directors-message-card {
   margin-bottom: clamp(2rem, calc(10vh - 1rem), 5rem);
@@ -41,7 +37,6 @@
   }
   h3 {
     margin-bottom: clamp(1.2rem, calc(2vw - 1rem), 2.5rem);
-    font-size: clamp(1.6rem, calc(3vw - 1rem), 3.2rem);
   }
 }
 .directors-message-text-bottom {

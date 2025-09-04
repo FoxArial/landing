@@ -4,6 +4,7 @@
 @import "../about_us/about-us-text";
 @import "../about_us/about-us-derictors-message";
 @import "../about_us/about-us-our-history";
+@import "../about_us/about-us-portal-members";
 @import "../mixin";
 * {
   margin: 0;
@@ -18,6 +19,10 @@ html {
     font-size: clamp(1.2rem, calc(3vw - 1rem), 2.5rem);
     font-weight: 750;
     color: $grayColor;
+  }
+  h2 {
+    margin: #{"min(3rem, 5%)"};
+    margin-left: 0px;
   }
   p {
     font-weight: 400;

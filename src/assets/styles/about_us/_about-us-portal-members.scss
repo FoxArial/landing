@@ -1,0 +1,46 @@
+@import "../mixin";
+.portal-members {
+  background-color: #fafafa;
+  @include paddingSide();
+  padding-top: 0;
+  padding-bottom: #{"min(3rem, 5%)"};
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  h2 {
+    margin-bottom: #{"min(1rem, 5%)"};
+  }
+}
+.portal-members-nav {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    & > :first-child {
+      color: $brownColor;
+      text-decoration: underline;
+    }
+  }
+}
+.directors-members-grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 24%));
+  gap: clamp(0.8rem, calc(1.5vw - 1rem), 2rem);
+}
+.directors-members-card-photo {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: $bgPhoto;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.directors-members-card-active {
+  display: none;
+}
