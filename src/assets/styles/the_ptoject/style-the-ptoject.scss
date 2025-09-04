@@ -1,0 +1,45 @@
+@import "../variables";
+@import "../elements/header";
+@import "../elements/footer";
+@import "../mixin";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir LT Std", serif;
+}
+html {
+  scroll-behavior: smooth;
+  h2 {
+    font-size: clamp(1.4rem, calc(3.5vw - 2rem), 3rem);
+    font-weight: 750;
+    color: $grayColor;
+    margin: #{"min(3rem, 5%)"};
+    margin-left: 0px;
+  }
+  h3 {
+    font-size: clamp(1.2rem, calc(3vw - 1.7rem), 2rem);
+    font-weight: 750;
+    color: $grayColor;
+  }
+  p {
+    font-weight: 400;
+    line-height: clamp(2rem, calc(4vw - 1.5rem), 3.5rem);
+    font-size: clamp(1rem, calc(3vw - 1.5rem), 2.5rem);
+  }
+}
+header {
+  min-height: 95vh;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/src/assets/img/Aimaather.png");
+  background-position: center center;
+  .center-info {
+    align-self: start;
+    h1 {
+      font-size: clamp(3rem, calc(5vw - 1rem), 5.5rem);
+      font-weight: 750;
+      margin-bottom: clamp(1.5rem, calc(6vh - 1rem), 4rem);
+    }
+  }
+}
