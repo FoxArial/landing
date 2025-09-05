@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Avenir LT Std";
-  src: url("./Avenir LT Std 45 Book.otf") format("opentype");
+  src: url("./Avenir LT Std 45 Book.woff2") format("opentype");
   font-weight: 350;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir LT Std";
-  src: url("./Avenir LT Std 55 Roman.otf") format("opentype");
+  src: url("./Avenir LT Std 55 Roman.woff2") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir LT Std";
-  src: url("./Avenir LT Std 95 Black.otf") format("opentype");
+  src: url("./Avenir LT Std 95 Black.woff2") format("opentype");
   font-weight: 750;
   font-style: normal;
 }

@@ -1,0 +1,30 @@
+@import "../mixin";
+
+.photo-scroll {
+  min-height: 25vh;
+  @include paddingSide();
+  padding-right: 0;
+  padding-bottom: #{"min(2rem, 5%)"};
+}
+.photo-scroll-content {
+  height: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  display: flex;
+  gap: clamp(1rem, calc(3vw - 2rem), 3rem);
+  scroll-snap-type: x mandatory;
+}
+.element {
+  flex: 0 0 clamp(15rem, calc(40vw - 1rem), 40rem);
+  overflow: hidden;
+  scroll-snap-align: start;
+  border-radius: 0.3rem;
+  img {
+    aspect-ratio: 3/2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+}

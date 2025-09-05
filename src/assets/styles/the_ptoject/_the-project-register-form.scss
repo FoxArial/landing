@@ -1,0 +1,14 @@
+@import "../mixin";
+.register-form {
+  min-height: 95vh;
+  background: url("../../img/road.png") center/ cover no-repeat;
+  @include paddingSide();
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+form {
+  background-color: $whiteCOlor;
+  margin: auto 0;
+  padding: #{"min(5rem, 5%)"} #{"min(4rem, 5%)"};
+}

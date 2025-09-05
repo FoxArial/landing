@@ -2,6 +2,8 @@
 @import "../elements/header";
 @import "../elements/footer";
 @import "./the-ptoject-business-quality";
+@import "./the-project-photo-scroll";
+@import "./the-project-register-form";
 @import "../mixin";
 * {
   margin: 0;
@@ -34,7 +36,7 @@ header {
   justify-content: space-between;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/src/assets/img/Aimaather.png");
-  background-position: center center;
+  background-position: 35% 60%;
   .center-info {
     align-self: start;
     h1 {
