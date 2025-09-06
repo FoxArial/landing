@@ -461,10 +461,67 @@ footer {
   align-items: center;
 }
 
-form {
+.form {
   background-color: #ffffff;
   margin: auto 0;
   padding: min(5rem, 5%) min(4rem, 5%);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.form span {
+  color: #191919;
+}
+.form p {
+  line-height: clamp(1.5rem, 3vw - 1.5rem, 2.5rem);
+}
+.form h3,
+.form p {
+  margin-bottom: min(3rem, 5%);
+}
+
+.input-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 3vh - 0.5rem, 1.5rem);
+}
+.input-form input {
+  padding: 1.5em;
+  border-color: rgba(91, 95, 97, 0.3647058824);
+  border-radius: 0.2rem;
+}
+.input-form input:last-child {
+  border: none;
+}
+
+.modile-number-box {
+  height: 100%;
+  border: 2px solid rgba(91, 95, 97, 0.3647058824);
+  border-radius: 0.2rem;
+  display: flex;
+}
+.modile-number-box select {
+  border: none;
+}
+.modile-number-box input {
+  flex: 1;
+}
+
+.submit-btn {
+  align-self: end;
+  margin-top: min(3rem, 5%);
+  width: 6rem;
+  padding: 12px;
+  font-size: 16px;
+  color: #c4762b;
+  background: transparent;
+  border: 2px solid #c4762b;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -485,13 +542,13 @@ html h2 {
   margin-left: 0px;
 }
 html h3 {
-  font-size: clamp(1.2rem, 3vw - 1.7rem, 2rem);
+  font-size: clamp(1.2rem, 3vw - 1.5rem, 2rem);
   font-weight: 750;
 }
 html p {
   font-weight: 400;
   line-height: clamp(2rem, 4vw - 1.5rem, 3.5rem);
-  font-size: clamp(1rem, 3vw - 1.5rem, 2.5rem);
+  font-size: clamp(1rem, 3vw - 2rem, 1.8rem);
   color: #5b5f61;
 }
 
